@@ -5,16 +5,18 @@
 
     /* Colors */
 
-    --first-color: hsl(var 250%, 69%, 61%);
-    --first-color-second: hsl(250%, 69%, 61%);
-    --first-color-alt: hsl(250%, 57%, 53%);
-    --first-color-lighter: hsl(250%, 92%, 85%);
+    --hue-color: 250; /* Matriz */
 
-    --title-color: hsl(250%, 8%, 61%);
-    --text-color: hsl(250%, 8%, 45%);
-    --text-color-light: hsl(250%, 8%, 65%);
-    --input-color: hsl(250%, 70%, 96%);
-    --body-color: hsl(250%, 60%, 99%);
+    --first-color: hsl(69%, 61%);
+    --first-color-second: hsl(var(--hue-color), 69%, 61%);
+    --first-color-alt: hsl(var(--hue-color), 57%, 53%);
+    --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
+
+    --title-color: hsl(var(--hue-color), 8%, 15%);
+    --text-color: hsl(var(--hue-color), 8%, 45%);
+    --text-color-ligh: hsl(var(--hue-color), 8%, 65%);
+    --input-color: hsl(var(--hue-color), 70%, 96%);
+    --body-color: hsl(var(--hue-color), 69%, 99%);
     --container-color:#fff;
 
     /* Font and typography */
@@ -73,10 +75,10 @@ html{
 }
 
 body{
-    margin:  0 0 var(--header-height) 0;
+    margin: 0 0 var(--header-height) 0;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
-    background-color:  var(--body-color);
+    background-color: var(--body-color);
     color: var(--text-color);
 }
 
@@ -91,6 +93,7 @@ ul{
 
 a{
     text-decoration: none;
+    color: var(--first-color);
 }
 
 img{
@@ -98,18 +101,13 @@ img{
     height: auto;
 }
 
-/* Reusable classes */
+/* CSS classes */
 
 .section{
-    padding: 2rem;
+    padding: 2rem 0 4rem;
 }
 
-.section__tittle{
-    font-size: var(--h1-font-size);
-}
-
-.section__subtitle{
-    display: block;
+.section__title{
     font-size: var(--small-font-size);
     margin-bottom: var(--mb-3);
 }
@@ -119,7 +117,7 @@ img{
     text-align: center;
 }
 
-/* Layout */
+/* layout */
 
 .container{
     max-width: 768px;
@@ -132,8 +130,6 @@ img{
     gap: 1.5rem;
 }
 
-/* Header */
-
 .header{
     width: 100%;
     position: fixed;
@@ -143,7 +139,8 @@ img{
     background-color: var(--body-color);
 }
 
-/* nav */
+/* NAV */
+
 .nav{
     max-width: 968px;
     height: var(--header-height);
@@ -154,7 +151,7 @@ img{
 
 .nav__logo,
 .nav__toggle{
-    color:var(--title-color);
+    color: var(--title-color);
     font-weight: var(--font-medium);
 }
 
@@ -174,19 +171,19 @@ img{
 @media screen and (max-width: 767px) {
     .nav__menu{
         position: fixed;
-        bottom: 0;
+        bottom: -100%;
         left: 0;
         width: 100%;
         background-color: var(--body-color);
         padding: 2rem 1.5rem 4rem;
         box-shadow: 0 -1px 4px rgba(0,0,0,.15);
-        border-radius: 1.5rem 1.5rem;
+        border-radius: 1.5rem 1.5rem 0 0;
         transition: .3s;
     }
 }
 
 .nav__list{
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns:  repeat(3,1fr);
     gap: 2rem;
 }
 
@@ -201,4 +198,26 @@ img{
 
 .nav__link:hover{
     color: var(--first-color);
+}
+
+.nav__icon{
+    font-size: 1.2rem;
+}
+
+.nav__close{
+    position: absolute;
+    right: 1.3rem;
+    bottom: .5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--first-color);
+}
+
+.nav__close:hover{
+    color: var(--first-color-alt);
+}
+
+/* show menu */
+.show-menu{
+    bottom: 0;
 }
