@@ -46,7 +46,7 @@ skillsHeader.forEach((el) => {
 
 /* Portfolio swiper */
 
-let swiper = new Swiper(".portfolio__container", {
+let swiperPortfolio = new Swiper(".portfolio__container", {
     cssMode: true,
     navigation: {
       nextEl: ".swiper-button-next",
@@ -55,6 +55,23 @@ let swiper = new Swiper(".portfolio__container", {
     pagination: {
       el: ".swiper-pagination",
     },
+    mousewheel: true,
+    keyboard: true,
+});
+
+// Testimonials swiper
+
+let swiperTestimonials = new Swiper(".testimonial__container", {
+    loop: true,
+    grabCursor: true,
+    spaceBetween:48,
+    
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      dinamicBullets: true,
+    },
+    
     mousewheel: true,
     keyboard: true,
 });

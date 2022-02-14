@@ -268,6 +268,8 @@ img{
 
 .home__img{
     margin-left: 3rem;
+    justify-self: center;
+
 }
 
 .home__blob-img{
@@ -338,6 +340,16 @@ img{
     font-size: 1.25rem;
     margin-left: var(--mb-0-5);
     transition: .3s;
+}
+
+.button--white{
+    background-color: #fff;
+    color: var(--first-color-second);
+}
+
+
+.button--white:hover{
+    background-color: white;
 }
 
 .button--flex{
@@ -423,28 +435,28 @@ img{
 }
 
 .skills__html{
-    width: 90%;
-}
-.skills__css{
     width: 80%;
 }
-.skills__js{
-    width: 40%;
-}
-.skills__python{
+.skills__css{
     width: 50%;
 }
-.skills__node{
+.skills__js{
+    width: 30%;
+}
+.skills__python{
     width: 20%;
+}
+.skills__node{
+    width: 30%;
 }
 .skills__bootstrap{
     width: 20%;
 }
 .skills__bulma{
-    width: 30%;
+    width: 60%;
 }
 .skills__photoshop{
-    width: 30%;
+    width: 40%;
 }
 .skills__git{
     width: 80%;
@@ -501,3 +513,39 @@ img{
     color: var(--first-color-second);
 }
 
+/* testimonials */
+
+.testimonial__data,
+.testimonial__header{
+    display: flex;
+}
+
+.testimonial__data{
+    justify-content: space-between;
+    margin-bottom: var(--mb-1);
+}
+
+.testimonial__img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: var(--mb-0-75);
+}
+
+.testimonial__name{
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+}
+
+.testimonial__client{
+    font-size: var(--small-font-size);
+    color: var(--text-color-ligh);
+}
+
+.testimonial__description{
+    margin-bottom: var(--mb-2-5);
+}
+
+.testimonial__icon-star{
+    color: var(--first-color-second);
+}
