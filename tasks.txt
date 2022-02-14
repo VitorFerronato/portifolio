@@ -1,0 +1,2 @@
+ - Configurar a porcentagem certa do que eu sei de cada linguagem, bater com a barra de progresso
+ - Ajeitas os espaçamentos da página
