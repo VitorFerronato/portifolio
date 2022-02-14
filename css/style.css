@@ -108,6 +108,11 @@ img{
 }
 
 .section__title{
+    font-size: var(--h1-font-size);
+}
+
+.section__subtitle{
+    display: block;
     font-size: var(--small-font-size);
     margin-bottom: var(--mb-3);
 }
@@ -204,6 +209,18 @@ img{
     font-size: 1.2rem;
 }
 
+.bi-linkedin:hover{
+    color: #0A66C2;
+}
+
+.bi-github:hover{
+    color: #262626;
+}
+
+.bi-instagram:hover{
+    color: #EA4753;
+}
+
 .nav__close{
     position: absolute;
     right: 1.3rem;
@@ -282,8 +299,8 @@ img{
     transition: .3s;
 }
 
-.home_scroll-button:hover{
-    transform: translateY(.25rem);
+.home__scroll-button:hover{
+    transform: translateY(0.25rem);
 }
 
 .home__scroll-mouse{
@@ -300,4 +317,11 @@ img{
 
 .home__scroll-arrow{
     font-size: 1.25rem;
+    margin-left: 5px;
+}
+
+/* Buttons */
+.button--flex{
+    display: inline-flex;
+    align-items: center;
 }
