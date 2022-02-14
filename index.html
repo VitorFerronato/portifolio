@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
 
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css">
 
     <!-- JavaScript -->
     <script src="./js/main.js" defer></script>
+
+    <!-- Swipper javascript-->
+    
 
     <!-- Icones bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
@@ -41,7 +46,7 @@
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#portolio" class="nav__link">
+                        <a href="#portfolio" class="nav__link">
                             <i class="bi bi-images nav__icon"></i> Portfolio
                         </a>
                     </li>
@@ -316,9 +321,68 @@
                 </div>
             </div>
         </section>
+
+        <!-- Porfolio -->
+        <section class="portfolio section" id="portfolio">
+             <h2 class="section__title">Portfolio</h2>
+             <span class="section__subtitle">Most recent work</span>
+
+             <div class="portfolio__container swiper">
+                 <div class="swiper-wrapper">
+                     <!-- Portfolio 1 -->
+                     <div class="portfolio__content grid swiper-slide">
+                         <img src="css/img/emObras_min.jpg" alt="" class="portfolio__img">
+
+                         <div class="portfolio__data">
+                             <h3 class="portfolio__title">CrossFit Tsar</h3>
+                             <p class="portfolio__description">Website adaptable to all devices, with animations and database</p>
+                             <a href="" class="button button--flex button--small portoflio__button">
+                                 Demo
+                                 <i class="bi bi-box-arrow-right button__icon"></i>
+                             </a>
+                         </div>
+                     </div>
+
+                     <!-- Portfolio 2 -->
+                     <div class="portfolio__content grid swiper-slide">
+                         <img src="css/img/emObras_min.jpg" alt="" class="portfolio__img">
+
+                         <div class="portfolio__data">
+                             <h3 class="portfolio__title">Rothes Jiu-Jitsu</h3>
+                             <p class="portfolio__description">Website adaptable, using bootstrap components</p>
+                             <a href="" class="button button--flex button--small portoflio__button">
+                                 Demo
+                                 <i class="bi bi-box-arrow-right button__icon"></i>
+                             </a>
+                         </div>
+                     </div>
+
+                     <!-- Portfolio 3 -->
+                     <div class="portfolio__content grid swiper-slide">
+                         <img src="css/img/emObras_min.jpg" alt="" class="portfolio__img">
+
+                         <div class="portfolio__data">
+                             <h3 class="portfolio__title">JokenPo</h3>
+                             <p class="portfolio__description">The classical game, made with some interactions</p>
+                             <a href="" class="button button--flex button--small portfolio__button">
+                                 Demo
+                                 <i class="bi bi-box-arrow-right button__icon"></i>
+                             </a>
+                         </div>
+                     </div>
+                 </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+             </div>
+        </section>
     </main>
 
     <!-- Footer -->
+
+    <!-- Swipper slide -->
+    <script src="./js/swiper-bundle.min.js"></script>
 </body>
 
 </html>
