@@ -70,7 +70,7 @@
     <!-- MAIN -->
     <main class="main">
         <!-- HOME -->
-        <section class="home section" id="home">
+        <section class="home section active-link" id="home">
             <div class="home__container container grid">
                 <div class="home__content grid">
                     <div class="home__social">
@@ -379,13 +379,13 @@
         </section>
 
         <!-- Testimonials -->
-        <section class="testimonial section">
+        <!-- <section class="testimonial section">
             <h2 class="section__title">Testimonials</h2>
             <span class="section__subtitle">My client saying</span>
 
             <div class="testimonial__container container swiper">
                 <div class="swiper-wrapper">
-                    <!-- Testimonials 1 -->
+                    Testimonials 1
                     <div class="testimonial__content swiper-slide">
                         <div class="testimonial__data">
                             <div class="testimonial__header">
@@ -410,7 +410,7 @@
                         </p>
                     </div>
 
-                    <!-- Testimonials 2 -->
+                    Testimonials 2
                     <div class="testimonial__content swiper-slide">
                         <div class="testimonial__data">
                             <div class="testimonial__header">
@@ -435,7 +435,7 @@
                         </p>
                     </div>
 
-                    <!-- Testimonials 3 -->
+                    Testimonials 3
                     <div class="testimonial__content swiper-slide">
                         <div class="testimonial__data">
                             <div class="testimonial__header">
@@ -462,13 +462,118 @@
                 </div>
                 <div class="swiper-pagination swiper-pagination-testimonial"></div>
             </div>
-        </section>
+        </section> -->
 
         <!-- Contact Me-->
-        
+         <section class="contact section" id="contact">
+             <h2 class="section__title">Contact Me</h2>
+             <span class="section__subtitle">Get in touch</span>
+
+             <div class="contact__container container grid">
+                 <div>
+                     <div class="contact__information">
+                        <i class="bi bi-telephone contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Call Me</h3>
+                            <span class="contact__subtitle">(49) 9 9817-0538</span> 
+                        </div>
+                     </div>
+
+                     <div class="contact__information">
+                        <i class="bi bi-envelope contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Email</h3>
+                            <span class="contact__subtitle">vitorferronato@gmail.com</span> 
+                        </div>
+                     </div>
+
+                     <div class="contact__information">
+                        <i class="bi bi-geo-alt contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Location</h3>
+                            <span class="contact__subtitle">Brasil | Joaçaba-Sc </span> 
+                        </div>
+                     </div>
+                 </div>
+
+                <form action="" class="contact__form grid">
+                    <div class="contact__inputs grid">
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Name</label>
+                            <input type="text" class="contact__input">
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Email</label>
+                            <input type="email" class="contact__input">
+                        </div> 
+                    </div>
+                    <div class="contact__content">
+                        <label for="" class="contact__label">Project</label>
+                        <input type="text" class="contact__input">
+                    </div> 
+                    <div class="contact__content">
+                        <label for="" class="contact__label">Message</label>
+                        <textarea name="" id="" cols="30" rows="7" class="contact__input"></textarea>
+                    </div>
+                    
+                    <div>
+                        <a href="#" class="button button--flex">
+                            Send Message
+                            <i class="bi bi-send button__icon"></i>
+                        </a>
+                    </div>
+
+                </form> 
+             </div>
+         </section>
+
+         <!-- Footer -->
+         <footer class="footer">
+             <div class="footer__bg">
+                 <div class="footer__container container grid">
+                    <div>
+                        <h1 class="footer__title">Vitor</h1>
+                        <span class="footer__subtitle">Frontend Developer</span>
+                    </div>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#about" class="footer__link">About Me</a>
+                        </li>
+                        <li>
+                            <a href="#portfolio" class="footer__link">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="footer__link">Contact Me</a>
+                        </li>
+                    </ul>
+
+                    <div class="footer__socials">
+                        <a href="#" target="_blank" class="footer__social">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" target="_blank" class="footer__social">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#" target="_blank" class="footer__social">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+                    </div>
+                 </div>
+
+                 <p class="footer__copy">&#169; VitorFerronato. All right reserved</p>
+             </div>
+         </footer>
+
+         <!-- Scroll up -->
+         <a href="#" class="scrollup" id="scroll-up">
+            <i class="bi bi-arrow-up scrollup__icon"></i>
+         </a>
     </main>
 
-    <!-- Footer -->
 
     <!-- Swipper slide -->
     <script src="./js/swiper-bundle.min.js"></script>
