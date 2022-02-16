@@ -5,10 +5,10 @@
 
     /* Colors */
 
-    --hue-color: 250; /* Matriz */
+    --hue-color: 200; /* Matriz */
 
     --first-color: hsl(69%, 61%);
-    --first-color-second: hsl(var(--hue-color), 69%, 61%);
+    --first-color-second: hsl(var(--hue-color), 69%, 50%);
     --first-color-alt: hsl(var(--hue-color), 57%, 53%);
     --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
 
@@ -294,15 +294,16 @@ img{
 }
 
 .home__img{
-    margin-left: 3rem;
     justify-self: center;
-
+    width: 100%;
+    text-align: center;
 }
 
-.home__blob-img{
-    width: 60%;
+.home__img img{
     border-radius: 50%;
+    width: 250px;
 }
+
 
 .home__data{
     grid-column: 1/3;
@@ -526,6 +527,7 @@ img{
     width: 265px;
     border-radius: .5rem;
     justify-self: center;
+    border: 1px solid rgba(0, 0, 0, 0.158);
 }
 
 .porfolio__title{
@@ -792,6 +794,10 @@ img{
      .contact__container,
      .footer__container{
          grid-template-columns: repeat(2, 1fr);
+     }
+
+     .about__img{
+         width: 250px;
      }
  }
 
