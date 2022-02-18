@@ -17,13 +17,6 @@ if(navClose){
 
 /* Remove menu mobile */
 
-const navLink = document.querySelectorAll('.nav__link')
-
-function linkAction(){
-    const nav_menu = document.getElementById('nav-menu')
-    navMenu.classList.remove('show-menu')
-}
-navLink.forEach(n => n.addEventListener('click', linkAction))
 
 /* Acordion Skills */
 const skillsContent = document.getElementsByClassName('skills__content'),
