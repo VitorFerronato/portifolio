@@ -188,6 +188,12 @@ img{
         border-radius: 1.5rem 1.5rem 0 0;
         transition: .3s;
     }
+    #home{
+        height: 100vh;
+    }
+    .home__scroll-button{
+        margin-top: 3rem;
+    }
 }
 
 .nav__list{
@@ -860,7 +866,7 @@ img{
      }
      .home__scroll{
          display: block;
-         margin-top: -4rem;
+         margin-top: -5rem;
      }
      .home__scroll-button{
          margin-left: 3rem;
