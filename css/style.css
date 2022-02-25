@@ -119,6 +119,7 @@ img{
     margin-bottom: var(--mb-3);
 }
 
+
 .section__title,
 .section__subtitle{
     text-align: center;
@@ -852,10 +853,14 @@ img{
          column-gap: 2rem;
      }
      .home__img{
-        width: 270px;
+        width: 350px;
+     }
+     .home__img img{
+         width: 100%;
      }
      .home__scroll{
          display: block;
+         margin-top: -4rem;
      }
      .home__scroll-button{
          margin-left: 3rem;
@@ -900,6 +905,7 @@ img{
      .footer__copy{
          margin-top: 4.5rem;
      }
+    
  }
 
  /* large devices */
@@ -925,6 +931,7 @@ img{
      .swiper-button-next{
          right: -3.5rem;
      }
+    
      
      .contact__form{
          width: 460px;
