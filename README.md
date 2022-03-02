@@ -15,5 +15,5 @@
 ## Galeria
 <div align="center"> 
   <img src="https://user-images.githubusercontent.com/94748997/156435296-8fb9f74d-81b3-4f19-ac95-9ab532b32e0e.png" width="300px" />
-  <img src="https://user-images.githubusercontent.com/94748997/156435043-0dbb4618-7e20-43d3-894c-71d22d26dcea.png" width="500px" />
+  <img src="https://user-images.githubusercontent.com/94748997/156435931-2d427f8f-8e1b-461c-a321-de77c9dab7a6.png" width="300px" />
 </div>
