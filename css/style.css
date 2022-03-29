@@ -475,29 +475,41 @@ img{
     background-color: var(--first-color-second);
 }
 
-.skills__html{
-    width: 80%;
+.skills__html-css{
+    width: 60%;
 }
-.skills__css{
-    width: 50%;
+.skills__sass{
+    width: 60%;
 }
-.skills__js{
+.skills__javascript{
     width: 30%;
 }
+.skills__react{
+    width: 20%;
+}
+.skills__bootstrap{
+    width: 30%;
+}
+.skills__bulma{
+    width: 60%;
+}
+
 .skills__python{
     width: 20%;
 }
 .skills__node{
     width: 30%;
 }
-.skills__bootstrap{
+
+.skills__mongo{
     width: 20%;
 }
-.skills__bulma{
-    width: 60%;
-}
+
 .skills__photoshop{
     width: 40%;
+}
+.skills__figma{
+    width: 60%;
 }
 .skills__git{
     width: 80%;
