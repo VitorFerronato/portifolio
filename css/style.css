@@ -504,6 +504,9 @@ img{
 .skills__mongo{
     width: 20%;
 }
+.skills__mysql{
+    width: 50%;
+}
 
 .skills__photoshop{
     width: 40%;
