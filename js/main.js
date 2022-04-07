@@ -48,16 +48,13 @@ skillsHeader.forEach((el) => {
 /* Portfolio swiper */
 
 let swiperPortfolio = new Swiper(".portfolio__container", {
-    cssMode: true,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
     pagination: {
       el: ".swiper-pagination",
     },
     mousewheel: true,
     keyboard: true,
+    loop: true,
+    grabCursor: true
 });
 
 // Testimonials swiper
@@ -76,6 +73,19 @@ let swiperTestimonials = new Swiper(".testimonial__container", {
     mousewheel: true,
     keyboard: true,
 });
+
+//Scroll Reveal
+const scrollReveal = ScrollReveal({
+    origin: 'top',
+    distance: '30px',
+    duration: 700,
+    reset: true
+})
+
+scrollReveal.reveal(
+    `#home, #about, #skills, #portfolio, #contact`,
+     {interval: 300})
+
 
 /* Scrolls section ative */
 const sections = document.querySelectorAll('section[id]')
