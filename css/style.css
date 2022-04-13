@@ -574,11 +574,6 @@ img{
     transform: translateX(.25rem);
 }
 
-.swiper-button-next,
-.swiper-button-prev{
-    color: var(--first-color-second);
-}
-
 /* testimonials */
 
 /* .testimonial__data,
