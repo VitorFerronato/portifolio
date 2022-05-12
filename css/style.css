@@ -442,8 +442,31 @@ img{
     margin-right: var(--mb-0-75);
 }
 
+.skills__flex-container{
+    width: 100%;
+    justify-content: flex-start;
+    display: flex;
+    gap: 10rem;
+}
+
+.skills__flex{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.skills__box{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: .5rem;
+}
+
 .skills__title{
     font-size: var(--h3-font-size);
+}
+
+.skills__logo{
+    width: 2rem;
 }
 
 .skills__arrow{
