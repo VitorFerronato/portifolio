@@ -112,35 +112,29 @@
             <h2 class="section__title">Sobre mim</h2>
             <span class="section__subtitle">Minha introdução</span>
 
-            <div class="about__container container grid">
-                <img width="300px" src="css/img/perfilAbout.jpg" alt="" class="about__img">
-
-                <div class="about__data">
+            <div class=" container grid">
+                <div>
                     <p class="about__description">
                         Entusiasta desde pequeno, sempre fui apaixonado por tecnologia e muito curioso sobre como as
                         coisas funcionam.
                     </p>
-                    <p class="about__description"> Atleta de Jiu-Jitsu desde pequeno, sempre fui muito disciplinado e
-                        comunicativo. Quando ministrei aulas
-                        em 2018 senti a necessidade de me desenvolver pessoalmente, e a faculdade de Coaching e
-                        desenvolvimento
-                        humano foi um divisor de águas para mim, foram dois anos e meio que me trouxeram excelentes
-                        habilidades
-                        de trabalho em equipe e gestão de pessoas e comunicação.
+                    <p class="about__description"> Sou um desenvolvedor front-end com 3 anos de experiência. Minhas
+                        principal habilidade é com Vue.js mas também tenho conhecimento de React, Angular, Sass,
+                        TypeScript,
+                        Bootstrap e bibliotecas como Vuetify e Tailwind.
                     </p>
-                    <p class="about__description"> A curiosidade foi o que sempre me manteve estudando, mas foi em 2020
-                        tentando resolver um problema que
-                        eu descobri o quão grande e incrível é essa área da tecnologia. Atualmente trabalho como
-                        desenvolvedor
-                        front-end e estou estudando para me tornar fullstack.
+                    <p class="about__description"> Tam bém tenho conhecimento em Node.js, Python e bancos de dados SQL.
+                        Além disso, sou experiente em ferramentas como Figma, Excel, Azure DevOps e utilizo SCRUM e Git
+                        para gerenciamento de projetos. Estou sempre buscando melhorar minhas habilidades e adoro
+                        colaborar em projetos desafiadores. Vamos trabalhar juntos para alcançar seus objetivos!
                     </p>
                 </div>
 
-                <!-- <div class="about__buttons">
-                    <a download href="/Curriculo-Vitor-Ferronato.pdf" class="button button--flex">
-                        Download Currículo <i class="bi bi-download button__icon"></i>
+                <div class="about__buttons">
+                    <a download href="/CV-Vitor_Ferronato.pdf" class="button button--flex">
+                        Download C.V <i class="bi bi-download button__icon"></i>
                     </a>
-                </div> -->
+                </div>
             </div>
         </section>
 
@@ -650,7 +644,7 @@
                     </div>
                 </div>
 
-                <form action="" class="contact__form grid">
+                <form name="contact" method="POST" data-netlify="true" class="contact__form grid">
                     <div class="contact__inputs grid">
                         <div class="contact__content">
                             <label for="" class="contact__label">Nome</label>
@@ -662,19 +656,16 @@
                         </div>
                     </div>
                     <div class="contact__content">
-                        <label for="" class="contact__label">Projeto</label>
-                        <input type="text" class="contact__input">
-                    </div>
-                    <div class="contact__content">
                         <label for="" class="contact__label">Mensagem</label>
                         <textarea name="" id="" cols="30" rows="7" class="contact__input"></textarea>
                     </div>
 
                     <div>
-                        <a href="#" class="button button--flex">
+                        <input type="submit" button button--flex value="Enviar Mensagem" class="button button--flex">
+                        <!-- <a href="#" class="button button--flex">
                             Enviar mensagem
                             <i class="bi bi-send button__icon"></i>
-                        </a>
+                        </a> -->
                     </div>
 
                 </form>

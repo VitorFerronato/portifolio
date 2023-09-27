@@ -52,6 +52,10 @@
     --z-modal: 1000;
 }
 
+input {
+    border: none;
+}
+
 /* Font size for large devides */
 @media screen and(min-width: 968px) {
     :root {
@@ -333,9 +337,6 @@ img {
     margin-bottom: var(--mb-0-75);
 }
 
-.home__scroll {
-    /* display: none; */
-}
 
 .home__scroll-button {
     color: var(--text-color);
@@ -454,18 +455,18 @@ img {
     font-weight: var(--font-medium);
 }
 
-.qualification__subtitle{
+.qualification__subtitle {
     display: inline-block;
     font-size: var(--small-font-size);
     margin-bottom: var(--mb-1);
 }
 
-.qualification__calendar{
-    font-size:  var(--smaller-font-size);
+.qualification__calendar {
+    font-size: var(--smaller-font-size);
     color: var(--text-color-ligh);
 }
 
-.qualification__rounder{
+.qualification__rounder {
     display: inline-block;
     width: 13px;
     height: 13px;
