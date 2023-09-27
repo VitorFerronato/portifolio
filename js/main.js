@@ -1,16 +1,16 @@
 // MENU SHOW
 const navMenu = document.getElementById('nav-menu'),
-      navToggle = document.getElementById('nav-toggle'),
-      navClose = document.getElementById('nav-close')
+    navToggle = document.getElementById('nav-toggle'),
+    navClose = document.getElementById('nav-close')
 
-if(navToggle){
-    navToggle.addEventListener('click',() => {
+if (navToggle) {
+    navToggle.addEventListener('click', () => {
         navMenu.classList.add('show-menu')
     })
 }
 
-if(navClose){
-    navClose.addEventListener('click', () =>{
+if (navClose) {
+    navClose.addEventListener('click', () => {
         navMenu.classList.remove('show-menu')
     })
 }
@@ -18,7 +18,7 @@ if(navClose){
 /* Remove menu mobile */
 const navLink = document.querySelectorAll('.nav__link')
 
-function linkAction(){
+function linkAction() {
     const navMenu = document.getElementById('nav-menu')
     // When we click on each nav__link, we remove the show-menu class
     navMenu.classList.remove('show-menu')
@@ -28,15 +28,15 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 
 /* Acordion Skills */
 const skillsContent = document.getElementsByClassName('skills__content'),
-skillsHeader = document.querySelectorAll('.skills__header')
+    skillsHeader = document.querySelectorAll('.skills__header')
 
-function toggleSkills(){
+function toggleSkills() {
     let itemClass = this.parentNode.className
 
-    for(i = 0; i < skillsContent.length; i++){
+    for (i = 0; i < skillsContent.length; i++) {
         skillsContent[i].className = 'skills__content skills__close'
     }
-    if(itemClass === 'skills__content skills__close'){
+    if (itemClass === 'skills__content skills__close') {
         this.parentNode.className = 'skills__content skills__open'
     }
 }
@@ -49,7 +49,7 @@ skillsHeader.forEach((el) => {
 
 let swiperPortfolio = new Swiper(".portfolio__container", {
     pagination: {
-      el: ".swiper-pagination",
+        el: ".swiper-pagination",
     },
     mousewheel: true,
     keyboard: true,
@@ -62,14 +62,14 @@ let swiperPortfolio = new Swiper(".portfolio__container", {
 let swiperTestimonials = new Swiper(".testimonial__container", {
     loop: true,
     grabCursor: true,
-    spaceBetween:48,
-    
+    spaceBetween: 48,
+
     pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-      dinamicBullets: true,
+        el: ".swiper-pagination",
+        clickable: true,
+        dinamicBullets: true,
     },
-    
+
     mousewheel: true,
     keyboard: true,
 });
@@ -84,23 +84,23 @@ const scrollReveal = ScrollReveal({
 
 scrollReveal.reveal(
     `#home, #about, #skills, #portfolio, #contact`,
-     {interval: 300})
+    { interval: 300 })
 
 
 /* Scrolls section ative */
 const sections = document.querySelectorAll('section[id]')
 
-function scrollActive(){
+function scrollActive() {
     const scrollY = window.pageYOffset
 
-    sections.forEach(current =>{
+    sections.forEach(current => {
         const sectionHeight = current.offsetHeight
         const sectionTop = current.offsetTop - 50;
         sectionId = current.getAttribute('id')
 
-        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
-        }else{
+        } else {
             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
         }
     })
@@ -108,15 +108,37 @@ function scrollActive(){
 window.addEventListener('scroll', scrollActive)
 
 /* Shadow Header */
-function scrollHeader(){
+function scrollHeader() {
     const nav = document.getElementById('header')
-    if(this.scrollY >= 80) nav.classList.add('scroll-header'); else nav.classList.remove('scroll-header')
+    if (this.scrollY >= 80) nav.classList.add('scroll-header'); else nav.classList.remove('scroll-header')
 }
 window.addEventListener('scroll', scrollHeader)
 
 /* Show scroll top */
-function scrollUp(){
+function scrollUp() {
     const scrollUp = document.getElementById('scroll-up');
-    if(this.scrollY >= 500) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
+    if (this.scrollY >= 500) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollUp)
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector("form[name='contact']");
+    const successMessage = document.getElementById("success-message");
+
+    form.addEventListener("submit", async function (event) {
+        event.preventDefault(); // Impede o envio padrão do formulário
+
+        // Aqui você pode adicionar código para enviar o formulário se desejar
+
+        // Exibe a mensagem de sucesso
+        successMessage.style.display = "block";
+        successMessage.textContent = "Mensagem enviada com sucesso!";
+
+        // Define um atraso de 3 segundos para ocultar a mensagem
+        setTimeout(function () {
+            successMessage.style.display = "none";
+        }, 3000); // 3000 milissegundos (3 segundos)
+    });
+});
+
