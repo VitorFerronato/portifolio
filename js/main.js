@@ -57,6 +57,27 @@ let swiperPortfolio = new Swiper(".portfolio__container", {
     grabCursor: true
 });
 
+/* QUALIFICATIONS */
+const tabs = document.querySelectorAll('[data-target]'),
+    tabContents = document.querySelectorAll('[data-content]')
+
+tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        const target = document.querySelector(tab.dataset.target)
+
+        tabContents.forEach(tabContent => {
+            tabContent.classList.remove('qualification__active')
+        })
+        target.classList.add('qualification__active')
+
+        tabs.forEach(tab => {
+            tab.classList.remove('qualification__active')
+        })
+        tab.classList.add('qualification__active')
+    })
+
+})
+
 // Testimonials swiper
 
 let swiperTestimonials = new Swiper(".testimonial__container", {
@@ -127,18 +148,15 @@ document.addEventListener("DOMContentLoaded", function () {
     const successMessage = document.getElementById("success-message");
 
     form.addEventListener("submit", async function (event) {
-        event.preventDefault(); // Impede o envio padrão do formulário
+        event.preventDefault();
 
-        // Aqui você pode adicionar código para enviar o formulário se desejar
 
-        // Exibe a mensagem de sucesso
         successMessage.style.display = "block";
         successMessage.textContent = "Mensagem enviada com sucesso!";
 
-        // Define um atraso de 3 segundos para ocultar a mensagem
         setTimeout(function () {
             successMessage.style.display = "none";
-        }, 3000); // 3000 milissegundos (3 segundos)
+        }, 3000);
     });
 });
 

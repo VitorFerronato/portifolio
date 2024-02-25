@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./css/style.css">
 
     <!-- JavaScript -->
-    <script src="./js/main.js" defer></script> 
+    <script src="./js/main.js" defer></script>
 
 
     <!-- Icones bootstrap -->
@@ -132,7 +132,7 @@
                 </div>
 
                 <div class="about__buttons">
-                    <a download href="/portifolio/CV-Vitor-Ferronato-En.pdf" class="button button--flex">
+                    <a download href="/CV_Vitor_Ferronato.pdf" class="button button--flex">
                         Download C.V <i class="bi bi-download button__icon"></i>
                     </a>
                 </div>
@@ -140,43 +140,111 @@
         </section>
 
         <!-- QUALIFICATIONS-->
-        <!-- <section class="qualification section">
-            <h2 class="section__title">Qualificações</h2>
-            <span class="section__subtitle">Minha jornada profissional</span>
+        <section class="qualification section">
+            <h2 class="section__title">Qualifications</h2>
+            <span class="section__subtitle">My personal journey</span>
 
             <div class="qualification__container container">
                 <div class="qualification__tabs">
-                    <div class="qualification__button button--flex">
-                        <i class="bi bi-suitcase-lg"></i>
+                    <div class="qualification__button button--flex qualification__active" data-target="#work">
+                        <i class="bi bi-person"></i>
                         Work
                     </div>
+
+                    <div class="qualification__button button--flex" data-target="#education">
+                        <i class="bi bi-person"></i>
+                        Education
+                    </div>
+
+
                 </div>
 
                 <div class="qualification__sections">
-                    <div class="qualification__content">
+
+                    <!-- WORK -->
+                    <div class="qualification__content qualification__active" data-content id="work">
                         <div class="qualification__data">
-                            <h3 class="qualification__title">
-                                Desenvolvedor Front-end
-                            </h3>
-                            <span class="qualification__subtitle">PREDIFY - </span>
-                            <div class="qualification__calendar">
-                                <i class="bi bi-calendar"></i>
-                                jun/2022 - Atual
+                            <div>
+                                <h3 class="qualification__title">
+                                    Mid Front-end Developer
+                                </h3>
+                                <span class="qualification__subtitle">Neogrid</span>
+                                <div class="qualification_calendar">
+                                    <i class="bi bi-calendar"></i>
+                                    jan/2024 - Actual
+                                </div>
                             </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+
                         </div>
 
-                        <div>
-                            <span class="qualification__rounder">
+                        <div class="qualification__data">
+                            <div></div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
 
-                            </span>
-                            <span class="qualification__line">
+                            <div>
+                                <h3 class="qualification__title">
+                                    Jr. Front-end Developer
+                                </h3>
+                                <span class="qualification__subtitle">Predify</span>
+                                <div class="qualification_calendar">
+                                    <i class="bi bi-calendar"></i>
+                                    Jun/2022 - Jan/2024
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                            </span>
+                    <!-- EDUCATION-->
+                    <div class="qualification__content" data-content id="education">
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">
+                                    Systems analysis and development
+                                </h3>
+                                <span class="qualification__subtitle">Cruzeiro do Sul</span>
+                                <div class="qualification_calendar">
+                                    <i class="bi bi-calendar"></i>
+                                    jan/2024 - Actual
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+
+                        </div>
+
+                        <div class="qualification__data">
+                            <div></div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                            <div>
+                                <h3 class="qualification__title">
+                                    Coaching and self development
+                                </h3>
+                                <span class="qualification__subtitle">Uninter</span>
+                                <div class="qualification_calendar">
+                                    <i class="bi bi-calendar"></i>
+                                    jan/2018 - jan/2020
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
 
         <!-- Skills -->
         <section class="skills section" id="skills">
@@ -261,26 +329,6 @@
 
                                 </div>
 
-                                <div class="skills__flex">
-                                    <div class="skills__data">
-                                        <div class="skills__titles">
-                                            <div class="skills__box">
-                                                <img src="css/img/js.png" alt="JavaScript logo" class="skills__logo">
-                                                <h3 class="skills__name">JavaScript</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="skills__data">
-                                        <div class="skills__titles">
-                                            <div class="skills__box">
-                                                <img src="css/img/bootstrap.png" alt="JavaScript logo"
-                                                    class="skills__logo">
-                                                <h3 class="skills__name">Bootstrap</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>

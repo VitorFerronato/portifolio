@@ -199,7 +199,8 @@ img {
     }
 
     #home {
-        height: 100vh;
+
+        height: 80vh;
     }
 
     .home__scroll-button {
@@ -437,7 +438,8 @@ img {
 }
 
 .qualification__button:hover {
-    color: var(--first-color);
+    color: var(--first-color-alt);
+    cursor: pointer;
 }
 
 .qualification__icon {
@@ -471,9 +473,27 @@ img {
     display: inline-block;
     width: 13px;
     height: 13px;
-    background-color: var(--first-color);
+    background-color: var(--first-color-alt);
+    
     border-radius: 50%;
 }
+
+.qualification__line {
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: var(--first-color-alt);
+    transform: translate(6px, -7px);
+}
+
+.qualification [data-content] {
+    display: none;
+}
+
+.qualification__active[data-content] {
+    display: block;
+}
+
 
 /* Skills */
 
@@ -502,7 +522,11 @@ img {
     width: 100%;
     justify-content: flex-start;
     display: flex;
-    gap: 10rem;
+    gap: 5rem;
+}
+
+.skills__data{
+    flex-grow: 1;
 }
 
 .skills__flex {
