@@ -23,9 +23,10 @@
 </head>
 
 <style>
-    /* Estilos da seção de filtros */
     .filter-section {
+        /* Cor de fundo da seção de filtros */
         padding-top: 7rem;
+        padding-bottom: 2rem;
     }
 
     .filter-card {
@@ -33,31 +34,53 @@
         padding: 1rem;
         border-radius: 8px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .filter-card h2 {
+        margin-bottom: 1rem;
+        color: #333;
     }
 
     .filter-options {
         display: flex;
-        gap: 1rem;
         flex-wrap: wrap;
+        gap: 0.5rem;
+        justify-content: center;
     }
 
     .filter-btn {
-        background-color: #333;
-        color: white;
+        background-color: #e0e0e0;
+        color: #333;
         border: none;
         padding: 0.5rem 1rem;
-        border-radius: 4px;
+        border-radius: 20px;
         cursor: pointer;
+        transition: background-color 0.3s, transform 0.2s;
+        font-size: 1rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 
     .filter-btn:hover {
-        background-color: #555;
+        background-color: #d4d4d4;
+        transform: scale(1.05);
+    }
+
+    .filter-btn.active-filter {
+        background-color: #007bff;
+        /* Cor de fundo dos botões ativos (azul) */
+        color: white;
+        /* Cor do texto dos botões ativos */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        /* Sombra mais intensa para botões ativos */
     }
 
     /* Estilos da seção de projetos */
-
     .project-container {
-        margin: 0 25rem;
+        margin: 0 2rem;
     }
 
     .projects-section {
@@ -115,11 +138,26 @@
         font-size: 0.875rem;
     }
 
-    .filter-btn.active-filter {
-        background-color: #f0a500;
-        /* Cor de fundo dos botões ativos */
-        color: white;
-        /* Cor do texto dos botões ativos */
+    @media (max-width: 900px) {
+        .projects-grid {
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-items: center;
+
+        }
+
+        .project-card {
+            width: 60%
+        }
+
+    }
+
+    @media (min-width: 1600px) {
+        .project-container {
+            margin: 0 12rem;
+        }
+
+      
     }
 </style>
 
