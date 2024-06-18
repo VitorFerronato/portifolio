@@ -55,6 +55,11 @@
     }
 
     /* Estilos da seção de projetos */
+
+    .project-container {
+        margin: 0 25rem;
+    }
+
     .projects-section {
         padding: 2rem 0;
     }
@@ -87,6 +92,9 @@
     .project-title {
         font-size: 1.25rem;
         margin: 0 0 0.5rem 0;
+        display: flex;
+        gap: 1rem;
+        align-items: center
     }
 
     .project-description {
@@ -167,6 +175,19 @@
                     <h2>Filtrar por:</h2>
                     <div class="filter-options">
                         <button class="filter-btn" data-filter="vuejs">VueJS</button>
+                        <button class="filter-btn" data-filter="nodejs">NodeJS</button>
+                        <button class="filter-btn" data-filter="ejs">EJS</button>
+                        <button class="filter-btn" data-filter="express">Express</button>
+                        <button class="filter-btn" data-filter="sqlite">SQLite</button>
+                        <button class="filter-btn" data-filter="optionsapi">OptionsAPI</button>
+                        <button class="filter-btn" data-filter="compositionapi">CompositionAPI</button>
+                        <button class="filter-btn" data-filter="firebase">Firebase</button>
+                        <button class="filter-btn" data-filter="vuex">VueX</button>
+                        <button class="filter-btn" data-filter="bootstrap">Bootstrap</button>
+                        <button class="filter-btn" data-filter="tailwind">Tailwind CSS</button>
+                        <button class="filter-btn" data-filter="leaflet">Leaflet</button>
+                        <button class="filter-btn" data-filter="axios">Axios</button>
+
                     </div>
                 </div>
             </div>
@@ -174,34 +195,271 @@
 
         <!-- Seção de Projetos -->
         <section class="projects-section">
-            <div class="container">
+            <div class="project-container">
                 <div class="projects-grid">
-                    <!-- Card de Projeto Exemplo -->
-                    <div class="project-card" data-category="vuejs">
-                        <img src="path/to/image1.jpg" alt="Project Image" class="project-img">
+                    <!-- Roquet Q -->
+                    <div class="project-card" data-category="nodejs,ejs,express,sqlite">
+                        <img src="./css/img/portifolio1/portifolio1.png" alt="Project Image" class="project-img">
                         <div class="project-info">
-                            <h3 class="project-title">Projeto VueJS</h3>
-                            <p class="project-description">Descrição do projeto usando VueJS.</p>
+                            <div class="project-title">
+                                <h3>Roquet Q</h3>
+                                <a style="margin-top: 4px ;" href="https://github.com/VitorFerronato/RocketQ"
+                                    target="_blank">
+                                    <i class="bi bi-github home__social-icon"></i>
+                                </a>
+
+                            </div>
+                            <p class="project-description">O Rocket.Q é uma aplicação de interação através de perguntas,
+                                sendo possível criar uma sala para internautas anônimos fazerem perguntas e o criador da
+                                sala em posse de uma senha gerenciar essas perguntas e marcar como lidas.</p>
+                            <div class="project-tech">
+                                <span class="tech-chip">HTML/CSS</span>
+                                <span class="tech-chip">NodeJS</span>
+                                <span class="tech-chip">EJS</span>
+                                <span class="tech-chip">Express</span>
+                                <span class="tech-chip">SQLite</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Make your burguer -->
+                    <div class="project-card" data-category="vuejs,optionsapi">
+                        <img src="./css/img/Make_your_burguer.jpg" alt="Project Image" class="project-img">
+                        <div class="project-info">
+                            <div class="project-title">
+                                <h3>Make your burguer</h3>
+                                <a style="margin-top: 4px ;" href="https://github.com/VitorFerronato/make-your-burger"
+                                    target="_blank">
+                                    <i class="bi bi-github home__social-icon"></i>
+                                </a>
+
+                            </div>
+                            <p class="project-description"> Make Your Burger é uma aplicação modular. No
+                                frontend, os clientes podem preencher um formulário para montar seu hambúrguer
+                                . Os pedidos são armazenados em um banco de dados e acessados através de
+                                uma API. Esses pedidos são exibidos em um dashboard, que permite visualizar, alterar e
+                                deletar pedidos.
+                            </p>
                             <div class="project-tech">
                                 <span class="tech-chip">VueJS</span>
-                                <span class="tech-chip">JavaScript</span>
-                                <span class="tech-chip">CSS</span>
+                                <span class="tech-chip">JSON Server API</span>
                             </div>
                         </div>
                     </div>
-                    <div class="project-card" data-category="react">
-                        <img src="path/to/image1.jpg" alt="Project Image" class="project-img">
+
+                    <!-- Todo LIST -->
+                    <div class="project-card" data-category="vuejs,bootstrap">
+                        <img src="./css/img/TODO_list.png" alt="Project Image" class="project-img">
                         <div class="project-info">
-                            <h3 class="project-title">Projeto VueJS</h3>
-                            <p class="project-description">Descrição do projeto usando VueJS.</p>
+                            <div class="project-title">
+                                <h3>TODO List</h3>
+                                <a style="margin-top: 4px ;" href="https://github.com/VitorFerronato/ToDoList"
+                                    target="_blank">
+                                    <i class="bi bi-github home__social-icon"></i>
+                                </a>
+                            </div>
+                            <p class="project-description"> O projeto é um app de tarefas, aonde você pode cadastrar
+                                novas tarefas, editar e excluí-las. Utiliza o próprio localStorage do navegador e exibe
+                                uma mensagem a cada ação do usuário.
+                            </p>
                             <div class="project-tech">
-                                <span class="tech-chip">React</span>
-                                <span class="tech-chip">JavaScript</span>
-                                <span class="tech-chip">CSS</span>
+                                <span class="tech-chip">VueJS</span>
+                                <span class="tech-chip">Bootstrap</span>
+                                <span class="tech-chip">Toast</span>
                             </div>
                         </div>
                     </div>
-                    <!-- Adicione mais cards conforme necessário -->
+
+                    <!-- Beauty Salon -->
+                    <div class="project-card" data-category="vuejs,bootstrap">
+                        <img src="./css/img/portifolio3/portifolio.png" alt="Project Image" class="project-img">
+                        <div class="project-info">
+                            <div class="project-title">
+                                <h3>Beauty Salon</h3>
+                                <a style="margin-top: 4px ;" href="https://github.com/VitorFerronato/OriginSix"
+                                    target="_blank">
+                                    <i class="bi bi-github home__social-icon"></i>
+                                </a>
+
+                                <a style="margin-top: 4px ;" href="https://vitorferronatoapps.github.io/beautysalon/"
+                                    target="_blank">
+                                    <i class="bi bi-caret-right-square home__social-icon"></i>
+                                </a>
+                            </div>
+                            <p class="project-description"> Projeto feito durante o NLW together da RocketSeat,
+                                apresenta um site customizavel de um salão de beleza.
+
+
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-chip">HTML/CSS/Javascript</span>
+                                <span class="tech-chip">Swiper</span>
+                                <span class="tech-chip">Scroll Review</span>
+                                <span class="tech-chip">ION icons</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TODO List 2 -->
+                    <div class="project-card" data-category="vuejs,optionsapi">
+                        <img src="./css/img/TODO_list2.png" alt="Project Image" class="project-img">
+                        <div class="project-info">
+                            <div class="project-title">
+                                <h3>TODO List 2</h3>
+                                <a style="margin-top: 4px ;" href="https://github.com/VitorFerronato/todo-list"
+                                    target="_blank">
+                                    <i class="bi bi-github home__social-icon"></i>
+                                </a>
+
+                            </div>
+                            <p class="project-description"> O projeto é um app de tarefas simples, você pode adicionar
+                                marcar como feita e excluir tarefas, também, a barra de progresso é definida
+                                dinâmicamente dependendo de quantas tarefas estão feitas. As tarefas ficam armazenadas
+                                no localStorage do navegador.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-chip">VueJS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Easy bills -->
+                    <div class="project-card" data-category="vuejs,firebase,vuex,optionsapi">
+                        <img src="./css/img/easyBills/capa.png" alt="Project Image" class="project-img">
+                        <div class="project-info">
+                            <div class="project-title">
+                                <h3>Easy Bills</h3>
+                                <a style="margin-top: 4px ;" href="https://github.com/VitorFerronato/easyBillsApp"
+                                    target="_blank">
+                                    <i class="bi bi-github home__social-icon"></i>
+                                </a>
+
+                                <a style="margin-top: 4px ;" href="https://easybillsapp.netlify.app/" target="_blank">
+                                    <i class="bi bi-caret-right-square home__social-icon"></i>
+                                </a>
+
+                            </div>
+                            <p class="project-description"> Easy Bills is a responsive web application built with Vue.js
+                                3, Firebase, and Vue animations, designed to simplify your invoicing and expense
+                                tracking needs. With Easy Bill, you can effortlessly manage your bills and expenses in a
+                                reactive and user-friendly environment.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-chip">VueJS</span>
+                                <span class="tech-chip">Firebase</span>
+                                <span class="tech-chip">VueX</span>
+                                <span class="tech-chip">Vue Animations</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- IP Tracker -->
+                    <div class="project-card" data-category="vuejs,tailwind,leaflet,axios,compositionapi">
+                        <img src="./css/img/ipTracker/ipTracker.png" alt="Project Image" class="project-img">
+                        <div class="project-info">
+                            <div class="project-title">
+                                <h3>IP tracker</h3>
+                                <a style="margin-top: 4px ;" href="https://github.com/VitorFerronato/ip-tracker"
+                                    target="_blank">
+                                    <i class="bi bi-github home__social-icon"></i>
+                                </a>
+                            </div>
+                            <p class="project-description"> A simple IP tracker that uses the Geo IP API to retrieve
+                                location information and display it on a map.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-chip">VueJS</span>
+                                <span class="tech-chip">Tailwind CSS</span>
+                                <span class="tech-chip">Leaflet</span>
+                                <span class="tech-chip">Geo IP API</span>
+                                <span class="tech-chip">Axios</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Infinite Scroll -->
+                    <div class="project-card" data-category="vuejs,axios,optionsapi">
+                        <img src="./css/img/infiniteScroll/infinite-scroll.png" alt="Project Image" class="project-img">
+                        <div class="project-info">
+                            <div class="project-title">
+                                <h3>Infinite Scroll</h3>
+                                <a style="margin-top: 4px ;" href="https://github.com/VitorFerronato/infinite-scroll"
+                                    target="_blank">
+                                    <i class="bi bi-github home__social-icon"></i>
+                                </a>
+
+                                <a style="margin-top: 4px ;" href="https://infinite-scroll-vue.netlify.app/"
+                                    target="_blank">
+                                    <i class="bi bi-caret-right-square home__social-icon"></i>
+                                </a>
+                            </div>
+                            <p class="project-description"> This project is an implementation of an infinite scroll list
+                                using Vue.js, vueUse, dummyJson and Axios. The application fetches dummy data from the
+                                API using dummyJson and displays it in the interface using Vue.js, taking advantage of
+                                the infinite scroll feature to load more items as the user scrolls down.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-chip">VueJS</span>
+                                <span class="tech-chip">VueUse</span>
+                                <span class="tech-chip">Leaflet</span>
+                                <span class="tech-chip">DummyJson</span>
+                                <span class="tech-chip">Axios</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Expense tracker -->
+                    <div class="project-card" data-category="vuejs,compositionapi">
+                        <img src="./css/img/expense_tracker.png" alt="Project Image" class="project-img">
+                        <div class="project-info">
+                            <div class="project-title">
+                                <h3>Expense tracker</h3>
+                                <a style="margin-top: 4px ;" href="https://github.com/VitorFerronato/expense-tracker"
+                                    target="_blank">
+                                    <i class="bi bi-github home__social-icon"></i>
+                                </a>
+
+                                <a style="margin-top: 4px ;" href="https://expenseflow.netlify.app/" target="_blank">
+                                    <i class="bi bi-caret-right-square home__social-icon"></i>
+                                </a>
+                            </div>
+                            <p class="project-description"> The Expense Tracker is a simple yet powerful web application
+                                designed to help you manage your personal finances effortlessly. With this application,
+                                you can easily record and track your expenses and income, providing a clear view of your
+                                overall financial balance.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-chip">VueJS</span>
+                                <span class="tech-chip">Toast</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Weather APP -->
+                    <div class="project-card" data-category="vuejs,compositionapi,axios,tailwind">
+                        <img src="./css/img/sky_alerts.png" alt="Project Image" class="project-img">
+                        <div class="project-info">
+                            <div class="project-title">
+                                <h3>Sky Alerts</h3>
+                                <a style="margin-top: 4px ;" href="https://github.com/VitorFerronato/weather-app"
+                                    target="_blank">
+                                    <i class="bi bi-github home__social-icon"></i>
+                                </a>
+
+                                <a style="margin-top: 4px ;" href="https://skyalerts.netlify.app" target="_blank">
+                                    <i class="bi bi-caret-right-square home__social-icon"></i>
+                                </a>
+                            </div>
+                            <p class="project-description"> MISSING DESCRIPTION.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-chip">VueJS</span>
+                                <span class="tech-chip">Toast</span>
+                                <span class="tech-chip">Axios</span>
+                                <span class="tech-chip">Tailwind</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
