@@ -24,88 +24,95 @@
 
 <style>
     /* Estilos da seção de filtros */
-.filter-section {
-    padding-top: 7rem;
-}
+    .filter-section {
+        padding-top: 7rem;
+    }
 
-.filter-card {
-    background: #fff;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
+    .filter-card {
+        background: #fff;
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
 
-.filter-options {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
+    .filter-options {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
 
-.filter-btn {
-    background-color: #333;
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    cursor: pointer;
-}
+    .filter-btn {
+        background-color: #333;
+        color: white;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        cursor: pointer;
+    }
 
-.filter-btn:hover {
-    background-color: #555;
-}
+    .filter-btn:hover {
+        background-color: #555;
+    }
 
-/* Estilos da seção de projetos */
-.projects-section {
-    padding: 2rem 0;
-}
+    /* Estilos da seção de projetos */
+    .projects-section {
+        padding: 2rem 0;
+    }
 
-.projects-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-}
+    .projects-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
 
-.project-card {
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    overflow: hidden;
-    width: calc(33.333% - 1rem);
-    margin-bottom: 1rem;
-}
+    .project-card {
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        width: calc(33.333% - 1rem);
+        margin-bottom: 1rem;
+    }
 
-.project-img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
+    .project-img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
 
-.project-info {
-    padding: 1rem;
-}
+    .project-info {
+        padding: 1rem;
+    }
 
-.project-title {
-    font-size: 1.25rem;
-    margin: 0 0 0.5rem 0;
-}
+    .project-title {
+        font-size: 1.25rem;
+        margin: 0 0 0.5rem 0;
+    }
 
-.project-description {
-    margin: 0 0 1rem 0;
-    color: #666;
-}
+    .project-description {
+        margin: 0 0 1rem 0;
+        color: #666;
+    }
 
-.project-tech {
-    display: flex;
-    gap: 0.5rem;
-    flex-wrap: wrap;
-}
+    .project-tech {
+        display: flex;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+    }
 
-.tech-chip {
-    background-color: #e0e0e0;
-    padding: 0.25rem 0.5rem;
-    border-radius: 4px;
-    font-size: 0.875rem;
-}
+    .tech-chip {
+        background-color: #e0e0e0;
+        padding: 0.25rem 0.5rem;
+        border-radius: 4px;
+        font-size: 0.875rem;
+    }
+
+    .filter-btn.active-filter {
+        background-color: #f0a500;
+        /* Cor de fundo dos botões ativos */
+        color: white;
+        /* Cor do texto dos botões ativos */
+    }
 </style>
 
 <body>
@@ -151,6 +158,7 @@
             </div>
         </nav>
     </header>
+
     <main>
         <!-- Filtro de Projetos -->
         <section class="filter-section">
@@ -158,12 +166,7 @@
                 <div class="filter-card">
                     <h2>Filtrar por:</h2>
                     <div class="filter-options">
-                        <button class="filter-btn" data-filter="all">Todos</button>
                         <button class="filter-btn" data-filter="vuejs">VueJS</button>
-                        <button class="filter-btn" data-filter="react">React</button>
-                        <button class="filter-btn" data-filter="flutter">Flutter</button>
-                        <button class="filter-btn" data-filter="plinia">Plinia</button>
-                        <button class="filter-btn" data-filter="order">Ordem de Realização</button>
                     </div>
                 </div>
             </div>
@@ -207,22 +210,48 @@
 
 <script>
     document.addEventListener('DOMContentLoaded', () => {
-    const filterButtons = document.querySelectorAll('.filter-btn');
-    const projectCards = document.querySelectorAll('.project-card');
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.project-card');
 
-    filterButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            const filter = button.dataset.filter;
-            projectCards.forEach(card => {
-                if (filter === 'all' || card.dataset.category.includes(filter)) {
-                    card.style.display = 'block';
+        // Array para manter os filtros ativos
+        let activeFilters = [];
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const filter = button.dataset.filter;
+
+                // Toggle do filtro ativo no array de filtros
+                if (activeFilters.includes(filter)) {
+                    activeFilters = activeFilters.filter(f => f !== filter);
+                    button.classList.remove('active-filter');
                 } else {
-                    card.style.display = 'none';
+                    activeFilters.push(filter);
+                    button.classList.add('active-filter');
+                }
+
+                // Se não houver filtros ativos, mostrar todos os projetos
+                if (activeFilters.length === 0) {
+                    projectCards.forEach(card => card.style.display = 'block');
+                } else {
+                    // Mostrar projetos que correspondem a qualquer filtro ativo
+                    projectCards.forEach(card => {
+                        const categories = card.dataset.category.split(',');
+
+                        // Verificar se alguma das categorias do projeto está nos filtros ativos
+                        const shouldShow = activeFilters.some(filter => categories.includes(filter));
+
+                        if (shouldShow) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
                 }
             });
         });
     });
-});
+
 
 </script>
+
 </html>
