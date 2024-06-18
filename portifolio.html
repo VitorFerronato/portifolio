@@ -78,17 +78,17 @@
                     <h2>Filtrar por:</h2>
                     <div class="filter-options">
                         <button class="filter-btn" data-filter="vuejs">VueJS</button>
+                        <button class="filter-btn" data-filter="tailwind">Tailwind CSS</button>
                         <button class="filter-btn" data-filter="nodejs">NodeJS</button>
                         <button class="filter-btn" data-filter="ejs">EJS</button>
-                        <button class="filter-btn" data-filter="express">Express</button>
-                        <button class="filter-btn" data-filter="sqlite">SQLite</button>
-                        <button class="filter-btn" data-filter="optionsapi">OptionsAPI</button>
-                        <button class="filter-btn" data-filter="compositionapi">CompositionAPI</button>
                         <button class="filter-btn" data-filter="firebase">Firebase</button>
                         <button class="filter-btn" data-filter="vuex">VueX</button>
                         <button class="filter-btn" data-filter="bootstrap">Bootstrap</button>
-                        <button class="filter-btn" data-filter="tailwind">Tailwind CSS</button>
                         <button class="filter-btn" data-filter="leaflet">Leaflet</button>
+                        <button class="filter-btn" data-filter="sqlite">SQLite</button>
+                        <button class="filter-btn" data-filter="optionsapi">OptionsAPI</button>
+                        <button class="filter-btn" data-filter="compositionapi">CompositionAPI</button>
+                        <button class="filter-btn" data-filter="express">Express</button>
                         <button class="filter-btn" data-filter="axios">Axios</button>
 
                     </div>
@@ -100,6 +100,145 @@
         <section class="projects-section">
             <div class="project-container">
                 <div class="projects-grid">
+                    <!-- Easy bills -->
+                    <div class="project-card" data-category="vuejs,firebase,vuex,optionsapi">
+                        <img src="./css/img/easyBills/capa.png" alt="Project Image" class="project-img">
+                        <div class="project-info">
+                            <div class="project-title">
+                                <h3>Easy Bills</h3>
+                                <a style="margin-top: 4px ;" href="https://github.com/VitorFerronato/easyBillsApp"
+                                    target="_blank">
+                                    <i class="bi bi-github home__social-icon"></i>
+                                </a>
+
+                                <a style="margin-top: 4px ;" href="https://easybillsapp.netlify.app/" target="_blank">
+                                    <i class="bi bi-caret-right-square home__social-icon"></i>
+                                </a>
+
+                            </div>
+                            <p class="project-description"> Easy Bills is a responsive web application built with Vue.js
+                                3, Firebase, and Vue animations, designed to simplify your invoicing and expense
+                                tracking needs. With Easy Bill, you can effortlessly manage your bills and expenses in a
+                                reactive and user-friendly environment.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-chip">VueJS</span>
+                                <span class="tech-chip">Firebase</span>
+                                <span class="tech-chip">VueX</span>
+                                <span class="tech-chip">Vue Animations</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Expense tracker -->
+                    <div class="project-card" data-category="vuejs,compositionapi">
+                        <img src="./css/img/expense_tracker.png" alt="Project Image" class="project-img">
+                        <div class="project-info">
+                            <div class="project-title">
+                                <h3>Expense tracker</h3>
+                                <a style="margin-top: 4px ;" href="https://github.com/VitorFerronato/expense-tracker"
+                                    target="_blank">
+                                    <i class="bi bi-github home__social-icon"></i>
+                                </a>
+
+                                <a style="margin-top: 4px ;" href="https://expenseflow.netlify.app/" target="_blank">
+                                    <i class="bi bi-caret-right-square home__social-icon"></i>
+                                </a>
+                            </div>
+                            <p class="project-description"> The Expense Tracker is a simple yet powerful web application
+                                designed to help you manage your personal finances effortlessly. With this application,
+                                you can easily record and track your expenses and income, providing a clear view of your
+                                overall financial balance.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-chip">VueJS</span>
+                                <span class="tech-chip">Toast</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Weather APP -->
+                    <div class="project-card" data-category="vuejs,compositionapi,axios,tailwind">
+                        <img src="./css/img/sky_alerts.png" alt="Project Image" class="project-img">
+                        <div class="project-info">
+                            <div class="project-title">
+                                <h3>Sky Alerts</h3>
+                                <a style="margin-top: 4px ;" href="https://github.com/VitorFerronato/weather-app"
+                                    target="_blank">
+                                    <i class="bi bi-github home__social-icon"></i>
+                                </a>
+
+                                <a style="margin-top: 4px ;" href="https://skyalerts.netlify.app" target="_blank">
+                                    <i class="bi bi-caret-right-square home__social-icon"></i>
+                                </a>
+                            </div>
+                            <p class="project-description"> Weather Watcher is a user-friendly web application designed
+                                to provide detailed weather information for any city around the globe.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-chip">VueJS</span>
+                                <span class="tech-chip">Toast</span>
+                                <span class="tech-chip">Axios</span>
+                                <span class="tech-chip">Tailwind</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- IP Tracker -->
+                    <div class="project-card" data-category="vuejs,tailwind,leaflet,axios,compositionapi">
+                        <img src="./css/img/ipTracker/ipTracker.png" alt="Project Image" class="project-img">
+                        <div class="project-info">
+                            <div class="project-title">
+                                <h3>IP tracker</h3>
+                                <a style="margin-top: 4px ;" href="https://github.com/VitorFerronato/ip-tracker"
+                                    target="_blank">
+                                    <i class="bi bi-github home__social-icon"></i>
+                                </a>
+                            </div>
+                            <p class="project-description"> A simple IP tracker that uses the Geo IP API to retrieve
+                                location information and display it on a map.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-chip">VueJS</span>
+                                <span class="tech-chip">Tailwind CSS</span>
+                                <span class="tech-chip">Leaflet</span>
+                                <span class="tech-chip">Geo IP API</span>
+                                <span class="tech-chip">Axios</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Infinite Scroll -->
+                    <div class="project-card" data-category="vuejs,axios,optionsapi">
+                        <img src="./css/img/infiniteScroll/infinite-scroll.png" alt="Project Image" class="project-img">
+                        <div class="project-info">
+                            <div class="project-title">
+                                <h3>Infinite Scroll</h3>
+                                <a style="margin-top: 4px ;" href="https://github.com/VitorFerronato/infinite-scroll"
+                                    target="_blank">
+                                    <i class="bi bi-github home__social-icon"></i>
+                                </a>
+
+                                <a style="margin-top: 4px ;" href="https://infinite-scroll-vue.netlify.app/"
+                                    target="_blank">
+                                    <i class="bi bi-caret-right-square home__social-icon"></i>
+                                </a>
+                            </div>
+                            <p class="project-description"> This project is an implementation of an infinite scroll list
+                                using Vue.js, vueUse, dummyJson and Axios. The application fetches dummy data from the
+                                API using dummyJson and displays it in the interface using Vue.js, taking advantage of
+                                the infinite scroll feature to load more items as the user scrolls down.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-chip">VueJS</span>
+                                <span class="tech-chip">VueUse</span>
+                                <span class="tech-chip">Leaflet</span>
+                                <span class="tech-chip">DummyJson</span>
+                                <span class="tech-chip">Axios</span>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- Roquet Q -->
                     <div class="project-card" data-category="nodejs,ejs,express,sqlite">
                         <img src="./css/img/portifolio1/portifolio1.png" alt="Project Image" class="project-img">
@@ -226,144 +365,6 @@
                         </div>
                     </div>
 
-                    <!-- Easy bills -->
-                    <div class="project-card" data-category="vuejs,firebase,vuex,optionsapi">
-                        <img src="./css/img/easyBills/capa.png" alt="Project Image" class="project-img">
-                        <div class="project-info">
-                            <div class="project-title">
-                                <h3>Easy Bills</h3>
-                                <a style="margin-top: 4px ;" href="https://github.com/VitorFerronato/easyBillsApp"
-                                    target="_blank">
-                                    <i class="bi bi-github home__social-icon"></i>
-                                </a>
-
-                                <a style="margin-top: 4px ;" href="https://easybillsapp.netlify.app/" target="_blank">
-                                    <i class="bi bi-caret-right-square home__social-icon"></i>
-                                </a>
-
-                            </div>
-                            <p class="project-description"> Easy Bills is a responsive web application built with Vue.js
-                                3, Firebase, and Vue animations, designed to simplify your invoicing and expense
-                                tracking needs. With Easy Bill, you can effortlessly manage your bills and expenses in a
-                                reactive and user-friendly environment.
-                            </p>
-                            <div class="project-tech">
-                                <span class="tech-chip">VueJS</span>
-                                <span class="tech-chip">Firebase</span>
-                                <span class="tech-chip">VueX</span>
-                                <span class="tech-chip">Vue Animations</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- IP Tracker -->
-                    <div class="project-card" data-category="vuejs,tailwind,leaflet,axios,compositionapi">
-                        <img src="./css/img/ipTracker/ipTracker.png" alt="Project Image" class="project-img">
-                        <div class="project-info">
-                            <div class="project-title">
-                                <h3>IP tracker</h3>
-                                <a style="margin-top: 4px ;" href="https://github.com/VitorFerronato/ip-tracker"
-                                    target="_blank">
-                                    <i class="bi bi-github home__social-icon"></i>
-                                </a>
-                            </div>
-                            <p class="project-description"> A simple IP tracker that uses the Geo IP API to retrieve
-                                location information and display it on a map.
-                            </p>
-                            <div class="project-tech">
-                                <span class="tech-chip">VueJS</span>
-                                <span class="tech-chip">Tailwind CSS</span>
-                                <span class="tech-chip">Leaflet</span>
-                                <span class="tech-chip">Geo IP API</span>
-                                <span class="tech-chip">Axios</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Infinite Scroll -->
-                    <div class="project-card" data-category="vuejs,axios,optionsapi">
-                        <img src="./css/img/infiniteScroll/infinite-scroll.png" alt="Project Image" class="project-img">
-                        <div class="project-info">
-                            <div class="project-title">
-                                <h3>Infinite Scroll</h3>
-                                <a style="margin-top: 4px ;" href="https://github.com/VitorFerronato/infinite-scroll"
-                                    target="_blank">
-                                    <i class="bi bi-github home__social-icon"></i>
-                                </a>
-
-                                <a style="margin-top: 4px ;" href="https://infinite-scroll-vue.netlify.app/"
-                                    target="_blank">
-                                    <i class="bi bi-caret-right-square home__social-icon"></i>
-                                </a>
-                            </div>
-                            <p class="project-description"> This project is an implementation of an infinite scroll list
-                                using Vue.js, vueUse, dummyJson and Axios. The application fetches dummy data from the
-                                API using dummyJson and displays it in the interface using Vue.js, taking advantage of
-                                the infinite scroll feature to load more items as the user scrolls down.
-                            </p>
-                            <div class="project-tech">
-                                <span class="tech-chip">VueJS</span>
-                                <span class="tech-chip">VueUse</span>
-                                <span class="tech-chip">Leaflet</span>
-                                <span class="tech-chip">DummyJson</span>
-                                <span class="tech-chip">Axios</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Expense tracker -->
-                    <div class="project-card" data-category="vuejs,compositionapi">
-                        <img src="./css/img/expense_tracker.png" alt="Project Image" class="project-img">
-                        <div class="project-info">
-                            <div class="project-title">
-                                <h3>Expense tracker</h3>
-                                <a style="margin-top: 4px ;" href="https://github.com/VitorFerronato/expense-tracker"
-                                    target="_blank">
-                                    <i class="bi bi-github home__social-icon"></i>
-                                </a>
-
-                                <a style="margin-top: 4px ;" href="https://expenseflow.netlify.app/" target="_blank">
-                                    <i class="bi bi-caret-right-square home__social-icon"></i>
-                                </a>
-                            </div>
-                            <p class="project-description"> The Expense Tracker is a simple yet powerful web application
-                                designed to help you manage your personal finances effortlessly. With this application,
-                                you can easily record and track your expenses and income, providing a clear view of your
-                                overall financial balance.
-                            </p>
-                            <div class="project-tech">
-                                <span class="tech-chip">VueJS</span>
-                                <span class="tech-chip">Toast</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Weather APP -->
-                    <div class="project-card" data-category="vuejs,compositionapi,axios,tailwind">
-                        <img src="./css/img/sky_alerts.png" alt="Project Image" class="project-img">
-                        <div class="project-info">
-                            <div class="project-title">
-                                <h3>Sky Alerts</h3>
-                                <a style="margin-top: 4px ;" href="https://github.com/VitorFerronato/weather-app"
-                                    target="_blank">
-                                    <i class="bi bi-github home__social-icon"></i>
-                                </a>
-
-                                <a style="margin-top: 4px ;" href="https://skyalerts.netlify.app" target="_blank">
-                                    <i class="bi bi-caret-right-square home__social-icon"></i>
-                                </a>
-                            </div>
-                            <p class="project-description"> Weather Watcher is a user-friendly web application designed
-                                to provide detailed weather information for any city around the globe.
-                            </p>
-                            <div class="project-tech">
-                                <span class="tech-chip">VueJS</span>
-                                <span class="tech-chip">Toast</span>
-                                <span class="tech-chip">Axios</span>
-                                <span class="tech-chip">Tailwind</span>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
@@ -371,6 +372,5 @@
 </body>
 
 <script src="./js/portifolio.js" defer></script>
-
 
 </html>
