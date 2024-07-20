@@ -20,14 +20,12 @@
         color: #333;
     }
 
-    .filter-options {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.5rem;
-        justify-content: center;
-    }
+
 
     .filter-btn {
+        display: flex;
+        align-items: center;
+        gap: .2rem;
         background-color: #e0e0e0;
         color: #333;
         border: none;
@@ -113,6 +111,16 @@
         font-size: 0.875rem;
     }
 
+    .skill_filter_box {
+        display: flex;
+        align-items: center;
+    }
+
+    .skill_filter {
+        width: 1.5rem;
+    }
+
+
     @media (max-width: 900px) {
         .projects-grid {
             flex-direction: column;
@@ -132,5 +140,5 @@
             margin: 0 12rem;
         }
 
-      
+
     }

@@ -54,10 +54,10 @@
                         </a>
                     </li>
                     <!-- <li class="nav__item">
-                        <a href="/index.html#contact" class="nav__link">
-                            <i class="bi bi-send nav__icon"></i> Contact
-                        </a>
-                    </li> -->
+                            <a href="/index.html#contact" class="nav__link">
+                                <i class="bi bi-send nav__icon"></i> Contact
+                            </a>
+                        </li> -->
                 </ul>
                 <i class="bi bi-x nav__close" id="nav-close"></i>
             </div>
@@ -72,29 +72,108 @@
 
     <main>
         <!-- Filtro de Projetos -->
-        <section class="filter-section">
-            <div class="container">
+        <section class="filter-section" style="display: flex; justify-content: center;">
+            <div class="container-filter">
                 <div class="filter-card">
                     <h2>Filtrar por:</h2>
-                    <div class="filter-options">
-                        <button class="filter-btn" data-filter="vuejs">VueJS</button>
-                        <button class="filter-btn" data-filter="react">React</button>
-                        <button class="filter-btn" data-filter="tailwind">Tailwind CSS</button>
-                        <button class="filter-btn" data-filter="nodejs">NodeJS</button>
-                        <button class="filter-btn" data-filter="ejs">EJS</button>
-                        <button class="filter-btn" data-filter="mongodb">MongoDB</button>
-                        <button class="filter-btn" data-filter="firebase">Firebase</button>
-                        <button class="filter-btn" data-filter="vuex">VueX</button>
-                        <button class="filter-btn" data-filter="socket">Socket.io</button>
-                        <button class="filter-btn" data-filter="bootstrap">Bootstrap</button>
-                        <button class="filter-btn" data-filter="leaflet">Leaflet</button>
-                        <button class="filter-btn" data-filter="bycript">Bycript</button>
-                        <button class="filter-btn" data-filter="sqlite">SQLite</button>
-                        <button class="filter-btn" data-filter="optionsapi">OptionsAPI</button>
-                        <button class="filter-btn" data-filter="compositionapi">CompositionAPI</button>
-                        <button class="filter-btn" data-filter="express">Express</button>
-                        <button class="filter-btn" data-filter="axios">Axios</button>
+                    <div class="filter-options"
+                        style="display: flex;flex-direction: column;justify-content: center;align-items: center;gap:.5rem">
+                        <!-- FRONT END-->
+                        <div style="display:flex;gap:.5rem">
+                            <button class="filter-btn" data-filter="vuejs">
+                                <img src="https://www.svgrepo.com/show/452130/vue.svg" alt="VueJ logo"
+                                    class="skill_filter">
+                                <span>VueJS</span>
+                            </button>
+                            <button class="filter-btn" data-filter="nuxt">
+                                <img src="https://www.svgrepo.com/show/373940/nuxt.svg" alt="nuxt logo"
+                                    class="skill_filter">
+                                <span>Nuxt</span>
+                            </button>
+                            <button class="filter-btn" data-filter="react">
+                                <img src="https://www.svgrepo.com/show/452092/react.svg" alt="react logo"
+                                    class="skill_filter">
+                                <span>React</span>
+                            </button>
+                            <button class="filter-btn" data-filter="tailwind">
+                                <img src="https://www.svgrepo.com/show/374118/tailwind.svg" alt="tailwind logo"
+                                    class="skill_filter">
+                                <span>Tailwind</span>
+                            </button>
+                            <button class="filter-btn" data-filter="bootstrap">
+                                <img src="https://www.svgrepo.com/show/353498/bootstrap.svg" alt="Bootstrap"
+                                    class="skill_filter">
+                                <span>Bootstrap</span>
+                            </button>
+                        </div>
+                        <!-- BACKEND -->
+                        <div style="display:flex;gap:.5rem">
+                            <button class="filter-btn" data-filter="node">
+                                <img src="https://www.svgrepo.com/show/452075/node-js.svg" alt="node logo"
+                                    class="skill_filter">
+                                <span>Nodejs</span>
+                            </button>
+                            <button class="filter-btn" data-filter="express">
+                                <img src="https://www.svgrepo.com/show/330398/express.svg" alt="express logo"
+                                    class="skill_filter">
+                                <span>Express</span>
+                            </button>
+                            <button class="filter-btn" data-filter="firebase'">
+                                <img src="https://www.svgrepo.com/show/373595/firebase.svg" alt="firebase logo"
+                                    class="skill_filter">
+                                <span>Firebase</span>
+                            </button>
+                            <button class="filter-btn" data-filter="socket">
+                                <img src="https://www.svgrepo.com/show/306753/socket-dot-io.svg" alt="socket logo"
+                                    class="skill_filter">
+                                <span>Socket.io</span>
+                            </button>
+                            <button class="filter-btn" data-filter="mongodb">
+                                <img src="https://www.svgrepo.com/show/373845/mongo.svg" alt="mongo logo"
+                                    class="skill_filter">
+                                <span>Mongo DB</span>
+                            </button>
+                            <button class="filter-btn" data-filter="sqlite'">
+                                <img src="https://www.svgrepo.com/show/508807/dbs-sqlite.svg" alt="sqlite logo"
+                                    class="skill_filter">
+                                <span>sqlite</span>
+                            </button>
 
+                            <button class="filter-btn" data-filter="ejs'">
+                                <img src="https://www.svgrepo.com/show/373574/ejs.svg" alt="ejs logo"
+                                    class="skill_filter">
+                                <span>EJS</span>
+                            </button>
+
+                        </div>
+                        <!-- OTHERS -->
+                        <div style="display:flex;gap:.5rem">
+                            <button class="filter-btn" data-filter="toast">
+                                <img src="https://www.svgrepo.com/show/447091/toast.svg" alt="toast logo"
+                                    class="skill_filter">
+                                <span>Toast</span>
+                            </button>
+                            <button class="filter-btn" data-filter="bycript">
+                                <img src="https://www.svgrepo.com/show/529520/code-square.svg" alt="bycript logo"
+                                    class="skill_filter">
+                                <span>Bycript</span>
+                            </button>
+                            <button class="filter-btn" data-filter="leaflet">
+                                <img src="https://www.svgrepo.com/show/532550/map-location-pin.svg" alt="Leaflet logo"
+                                    class="skill_filter">
+                                <span>Leaflet</span>
+                            </button>
+                            <button class="filter-btn" data-filter="compositionapi">
+                                <img src="https://www.svgrepo.com/show/459015/cog.svg" alt="mongo logo"
+                                    class="skill_filter">
+                                <span>Composition API</span>
+                            </button>
+                            <button class="filter-btn" data-filter="optionsapi'">
+                                <img src="https://www.svgrepo.com/show/446564/cog-small-cog.svg" alt="firebase logo"
+                                    class="skill_filter">
+                                <span>Options API</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -394,7 +473,6 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
