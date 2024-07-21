@@ -75,7 +75,7 @@
         <section class="filter-section" style="display: flex; justify-content: center;">
             <div class="container-filter">
                 <div class="filter-card">
-                    <h2>Filtrar por:</h2>
+                    <h2>Filter by:</h2>
                     <div class="filter-options"
                         style="display: flex;flex-direction: column;justify-content: center;align-items: center;gap:.5rem">
                         <!-- FRONT END-->
@@ -100,10 +100,20 @@
                                     class="skill_filter">
                                 <span>Tailwind</span>
                             </button>
+                            <button class="filter-btn" data-filter="vuetify">
+                                <img src="https://www.svgrepo.com/show/306946/vuetify.svg" alt="vuetify logo"
+                                    class="skill_filter">
+                                <span>Vuetify</span>
+                            </button>
                             <button class="filter-btn" data-filter="bootstrap">
                                 <img src="https://www.svgrepo.com/show/353498/bootstrap.svg" alt="Bootstrap"
                                     class="skill_filter">
                                 <span>Bootstrap</span>
+                            </button>
+                            <button class="filter-btn" data-filter="pinia">
+                                <img src="https://www.svgrepo.com/show/407210/pineapple.svg" alt="pinia"
+                                    class="skill_filter">
+                                <span>Pinia</span>
                             </button>
                         </div>
                         <!-- BACKEND -->
@@ -153,6 +163,16 @@
                                     class="skill_filter">
                                 <span>Toast</span>
                             </button>
+                            <button class="filter-btn" data-filter="aws">
+                                <img src="https://www.svgrepo.com/show/448266/aws.svg" alt="toast logo"
+                                    class="skill_filter">
+                                <span>AWS</span>
+                            </button>
+                            <button class="filter-btn" data-filter="openai">
+                                <img src="https://www.svgrepo.com/show/486520/ai.svg" alt="toast logo"
+                                    class="skill_filter">
+                                <span>Open AI</span>
+                            </button>
                             <button class="filter-btn" data-filter="bycript">
                                 <img src="https://www.svgrepo.com/show/529520/code-square.svg" alt="bycript logo"
                                     class="skill_filter">
@@ -168,7 +188,7 @@
                                     class="skill_filter">
                                 <span>Composition API</span>
                             </button>
-                            <button class="filter-btn" data-filter="optionsapi'">
+                            <button class="filter-btn" data-filter="optionsapi">
                                 <img src="https://www.svgrepo.com/show/446564/cog-small-cog.svg" alt="firebase logo"
                                     class="skill_filter">
                                 <span>Options API</span>
@@ -183,6 +203,58 @@
         <section class="projects-section">
             <div class="project-container">
                 <div class="projects-grid">
+                    <!-- Voice gpt -->
+                    <div class="project-card" data-category="vuejs,aws,openai,express,compositionapi">
+                        <img src="./css/img/voice-gpt.png" alt="Project Image" class="project-img">
+                        <div class="project-info">
+                            <div class="project-title">
+                                <h3>Voice gpt</h3>
+                                <a style="margin-top: 4px ;" href="https://github.com/VitorFerronato/voice-gpt"
+                                    target="_blank">
+                                    <i class="bi bi-github home__social-icon"></i>
+                                </a>
+
+                            </div>
+                            <p class="project-description"> Voice GTP is an application that allows users to ask
+                                questions and get answers through voice using artificial intelligence. This project
+                                combines modern technologies to offer an interactive and efficient experience
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-chip">Vue</span>
+                                <span class="tech-chip">AWS</span>
+                                <span class="tech-chip">Open AI</span>
+                                <span class="tech-chip">Express</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Nuxt finances -->
+                    <div class="project-card" data-category="nuxt,vuejs,tailwind,compositionapi">
+                        <img src="./css/img/nuxt-finances.png" alt="Project Image" class="project-img">
+                        <div class="project-info">
+                            <div class="project-title">
+                                <h3>Nuxt Finances</h3>
+                                <a style="margin-top: 4px ;" href="https://github.com/VitorFerronato/nuxt-finances"
+                                    target="_blank">
+                                    <i class="bi bi-github home__social-icon"></i>
+                                </a>
+
+                            </div>
+                            <p class="project-description"> Finances is a project designed to help you manage your
+                                personal finances. On the home screen, you will find an interactive graph that presents
+                                an overview of your spending and expenses. Additionally, you can add your transactions,
+                                keeping an up-to-date record of your finances
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-chip">Nuxt</span>
+                                <span class="tech-chip">Vue</span>
+                                <span class="tech-chip">Tailwind</span>
+                                <span class="tech-chip">Shadcn</span>
+                                <span class="tech-chip">compositionapi</span>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- Chat app -->
                     <div class="project-card" data-category="react,nodejs,express,bycript,mongodb,socket,bootstrap">
                         <img src="./css/img/chatapp.png" alt="Project Image" class="project-img">
@@ -207,6 +279,81 @@
                                 <span class="tech-chip">MongoDB</span>
                                 <span class="tech-chip">Socket.io</span>
                                 <span class="tech-chip">Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Nuxt ecommerce -->
+                    <div class="project-card" data-category="nuxt,vuejs,vuetify,compositionapi">
+                        <img src="./css/img/nuxt-cart.png" alt="Project Image" class="project-img">
+                        <div class="project-info">
+                            <div class="project-title">
+                                <h3>Nuxt e-commerce</h3>
+                                <a style="margin-top: 4px ;" href="https://github.com/VitorFerronato/nuxt-shopping-cart"
+                                    target="_blank">
+                                    <i class="bi bi-github home__social-icon"></i>
+                                </a>
+
+                            </div>
+                            <p class="project-description"> Simulating an e-commerce, you can list the products, add
+                                them to the cart, see the total, change to dark mode.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-chip">Nuxt</span>
+                                <span class="tech-chip">VueJS</span>
+                                <span class="tech-chip">Pinia</span>
+                                <span class="tech-chip">Vuetify</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Nuxt authentication -->
+                    <div class="project-card" data-category="vuejs,nuxt,firebase,tailwind,compositionapi">
+                        <img src="./css/img/nuxt-autentication.png" class="project-img">
+                        <div class="project-info">
+                            <div class="project-title">
+                                <h3>Nuxt Authentication</h3>
+                                <a style="margin-top: 4px ;"
+                                    href="https://github.com/VitorFerronato/nuxt-authentication" target="_blank">
+                                    <i class="bi bi-github home__social-icon"></i>
+                                </a>
+                            </div>
+                            <p class="project-description"> Nuxt authentication is a project that allows users to be
+                                created and logged into the application. Each user can have specific authorizations to
+                                access different pages of the application, ensuring strict control of permissions and
+                                security.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-chip">VueJS</span>
+                                <span class="tech-chip">Nuxt</span>
+                                <span class="tech-chip">Firebase</span>
+                                <span class="tech-chip">Tailwind</span>
+                                <span class="tech-chip">Nuxt/ui</span>
+                                <span class="tech-chip">Zod</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- tic tac toe -->
+                    <div class="project-card" data-category="vuejs,tailwind,compositionapi">
+                        <img src="./css/img/tica-tac.png" class="project-img">
+                        <div class="project-info">
+                            <div class="project-title">
+                                <h3>Tic Tac Toe</h3>
+                                <a style="margin-top: 4px ;" href="https://github.com/VitorFerronato/tic-tac-toe"
+                                    target="_blank">
+                                    <i class="bi bi-github home__social-icon"></i>
+                                </a>
+                                <a style="margin-top: 4px ;" href="https://tictacmastervue.netlify.app" target="_blank">
+                                    <i class="bi bi-caret-right-square home__social-icon"></i>
+                                </a>
+
+                            </div>
+                            <p class="project-description"> The classic tic tac toe game.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-chip">VueJS</span>
+                                <span class="tech-chip">Tailwind</span>
                             </div>
                         </div>
                     </div>
