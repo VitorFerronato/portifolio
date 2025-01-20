@@ -28,8 +28,53 @@
     <title>VF | Portifólio</title>
   </head>
 
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #2c3e50;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .containerD {
+      text-align: center;
+      color: #333;
+    }
+
+    .containerD img {
+      max-width: 300px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    .containerD h1 {
+      font-size: 24px;
+      margin: 0;
+      color: #ecf0f1;
+    }
+
+    .containerD p {
+      font-size: 18px;
+      margin-top: 10px;
+      color: #ecf0f1;
+    }
+  </style>
+
   <body>
-    <header class="header" id="header">
+    <div class="containerD">
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/1055/1055646.png"
+        alt="Trabalhadores em construção"
+      />
+      <h1>Sorry :(, we are undergoing renovations!</h1>
+      <p>Come back soon to see what's new!.</p>
+    </div>
+
+    <header style="display: none" class="header" id="header">
       <nav class="nav container">
         <a href="" class="nav__logo"></a>
 
@@ -72,7 +117,7 @@
       </nav>
     </header>
 
-    <main>
+    <main style="display: none">
       <!-- Filtro de Projetos -->
       <section
         class="filter-section"
