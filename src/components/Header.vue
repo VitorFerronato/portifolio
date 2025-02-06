@@ -15,15 +15,18 @@
 
 <style lang="scss" scoped>
 #header {
+  position: fixed;
+  top: 0;
   height: 10rem;
+  width: 100%;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 6rem;
 
   img {
     width: 9%;
+    margin-left: 4.5rem;
   }
 
   p {
@@ -33,6 +36,7 @@
   }
 
   div {
+    margin-right: 6rem;
     router-link,
     a {
       color: $white-color;
