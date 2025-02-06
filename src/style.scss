@@ -10,12 +10,25 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 a {
   text-decoration: none;
 }
 
 .ma-0 {
   margin: 0;
+}
+
+.mt-6 {
+  padding-top: 24px;
+}
+
+.mt-7 {
+  padding-top: 30px;
 }
 
 .pa-0 {
@@ -49,4 +62,8 @@ a {
 
 .color-destaq {
   color: $primary-color;
+}
+
+.text-center {
+  text-align: center;
 }
