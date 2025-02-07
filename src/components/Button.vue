@@ -1,17 +1,32 @@
 <template>
   <div>
-    <button class="custom-button">{{ title }}</button>
+    <button class="custom-button">
+      <span>{{ title }}</span>
+      <Icon v-if="icon" :icon="icon" :width="iconSize" :color="color" />
+    </button>
   </div>
 </template>
 
 <script setup>
 defineProps({
   title: String,
+  icon: String,
+  iconSize: {
+    type: String,
+    default: "25",
+  },
+  color: {
+    type: String,
+    default: "#fff",
+  },
 });
 </script>
 
 <style lang="scss" scoped>
 .custom-button {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
   background-color: $primary-color;
   color: white;
   font-size: 16px;
