@@ -5,7 +5,6 @@
     <div class="d-flex align-center gap-8">
       <router-link to="/" active-class="isActive">Home</router-link>
       <router-link to="/about" active-class="isActive">About</router-link>
-      <router-link to="/skills" active-class="isActive">Skills</router-link>
       <router-link to="/projects" active-class="isActive">Projects</router-link>
     </div>
   </div>

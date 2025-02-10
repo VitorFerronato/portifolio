@@ -145,10 +145,7 @@ const skills = ref([
 
 <style lang="scss" scoped>
 #skills {
-  margin-top: 3rem;
-  padding: 4rem 6rem 0 6rem;
-  background-color: $second-color;
-
+  padding: 4rem 0;
   .skills-main {
     display: flex;
     align-items: stretch;

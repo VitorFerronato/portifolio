@@ -6,7 +6,7 @@
     <div id="section-content">
       <AboutView />
       <ServicesView />
-      <SkillsView />
+      <ProjectsView />
       <Footter />
     </div>
   </div>
@@ -17,8 +17,8 @@ import Header from "@/components/Header.vue";
 import HomeView from "./views/HomeView.vue";
 import AboutView from "./views/AboutView.vue";
 import ServicesView from "./views/ServicesView.vue";
-import SkillsView from "./views/SkillsView.vue";
 import Footter from "./components/Footter.vue";
+import ProjectsView from "./views/ProjectsView.vue";
 </script>
 
 <style lang="scss" scoped>
