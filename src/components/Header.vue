@@ -47,7 +47,7 @@ onUnmounted(() => {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
+  background-color: $second-color;
   transition: transform 0.4s ease-in-out, opacity 0.3s ease-in-out;
 
   img {

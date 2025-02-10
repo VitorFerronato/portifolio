@@ -14,6 +14,8 @@
       </p>
 
       <Button title="Got curious?" />
+
+      <SocialIcons class="social-icons" />
     </div>
 
     <div class="profile-picture">
@@ -23,6 +25,8 @@
 </template>
 
 <script setup>
+import SocialIcons from "../components/SocialIcons.vue";
+
 import Button from "../components/Button.vue";
 </script>
 
@@ -60,6 +64,10 @@ import Button from "../components/Button.vue";
     .description {
       color: $white-light-color;
       margin-bottom: 3rem;
+    }
+
+    .social-icons {
+      margin-top: 4rem;
     }
   }
 

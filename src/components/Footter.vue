@@ -1,18 +1,56 @@
 <template>
-  <div id="footer">FOOTER</div>
+  <div id="footer">
+    <img src="../assets/logo.png" alt="" />
+
+    <p class="ma-0">2025 Todos os direitos reservados &reg;</p>
+
+    <SocialIcons />
+  </div>
 </template>
 
-<script setup></script>
+<script setup>
+import SocialIcons from "../components/SocialIcons.vue";
+</script>
 
 <style lang="scss" scoped>
 #footer {
-  margin-top: 4rem;
   display: flex;
-  justify-content: center;
   align-items: center;
-  border: 0.5px solid #cccccc49;
-  background-color: $second-color;
+  justify-content: space-between;
+  background-color: $dark-color;
   height: 200px;
   color: $white-color;
+
+  p {
+    align-self: flex-end;
+    color: $white-light-color;
+    font-size: 12px;
+    padding-bottom: 4px;
+  }
+
+  img {
+    width: 9%;
+    margin-left: 4.5rem;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  router-link,
+  a {
+    color: $white-color;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  router-link:hover,
+  a:hover {
+    color: $primary-color !important;
+  }
 }
 </style>
