@@ -47,6 +47,9 @@ a {
 .justify-center {
   justify-content: center;
 }
+.d-flex-column {
+  flex-direction: column;
+}
 
 .gap-1 {
   gap: 0.25rem;
@@ -87,4 +90,8 @@ a {
   font-weight: 400 !important;
   margin-bottom: 1.5rem;
   color: $white-light-color;
+}
+
+html {
+  scroll-behavior: smooth;
 }

@@ -52,7 +52,7 @@ const services = ref([
 <style lang="scss" scoped>
 #about-services {
   margin-top: 4rem;
-
+  padding-top: 4rem;
   .services {
     display: flex;
     justify-content: space-evenly;

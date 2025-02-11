@@ -10,14 +10,11 @@
     <div class="d-flex justify-end">
       <Button title="All projects" class="all-button" />
     </div>
-
-    <SkillsView />
   </section>
 </template>
 
 <script setup>
 import Swiper from "../components/Swiper.vue";
-import SkillsView from "./SkillsView.vue";
 import Button from "../components/Button.vue";
 </script>
 
@@ -29,6 +26,7 @@ import Button from "../components/Button.vue";
 
   .all-button {
     margin-top: 1rem;
+    margin-bottom: 4rem;
   }
 }
 </style>

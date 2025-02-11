@@ -1,21 +1,21 @@
 <template>
   <section id="home">
     <div class="about-me">
-      <h1 class="hello ma-0">
-        Hello World, <span class="color-destaq">I'm</span>
-      </h1>
-      <h1 class="name ma-0">Vitor Ferronato</h1>
-      <p class="subtitle ma-0">Front end developer</p>
-      <p class="description ma-0">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo laborum
-        pariatur quas tenetur cum, voluptates nam voluptatem dolore nostrum
-        dolorem, fugit itaque quaerat, eius esse! Reiciendis earum ratione iusto
-        deserunt!
-      </p>
+      <div>
+        <h1 class="hello ma-0">
+          Hello World, <span class="color-destaq">I'm</span>
+        </h1>
+        <h1 class="name ma-0">Vitor Ferronato</h1>
+        <p class="subtitle ma-0">Front end developer</p>
+        <p class="description ma-0">
+          Heey, I am a front-end developer with 5 years of experience,
+          specialized in Vue.js and its ecosystem. I focus on creating modern,
+          intuitive, and high-performance interfaces, combining high-quality
+          UI/UX with agile and intelligent solutions to enhance user experience.
+        </p>
 
-      <Button title="Got curious?" />
-
-      <SocialIcons class="social-icons" />
+        <router-link to="/#about"><Button title="Got curious?" /></router-link>
+      </div>
     </div>
 
     <div class="profile-picture">
@@ -25,8 +25,6 @@
 </template>
 
 <script setup>
-import SocialIcons from "../components/SocialIcons.vue";
-
 import Button from "../components/Button.vue";
 </script>
 

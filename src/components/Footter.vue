@@ -2,7 +2,7 @@
   <div id="footer">
     <img src="../assets/logo.png" alt="" />
 
-    <p class="ma-0">2025 Todos os direitos reservados &reg;</p>
+    <p class="ma-0">2025 all rights reserved &reg;</p>
 
     <SocialIcons />
   </div>

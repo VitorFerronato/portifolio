@@ -3,9 +3,27 @@
     <img src="../assets/logo.png" alt="" />
 
     <div class="d-flex align-center gap-8">
-      <router-link to="/" active-class="isActive">Home</router-link>
-      <router-link to="/about" active-class="isActive">About</router-link>
-      <router-link to="/projects" active-class="isActive">Projects</router-link>
+      <router-link
+        to="/#home"
+        :class="{ isActive: activeSection === 'home' }"
+        @click.prevent="setActiveSection('home')"
+      >
+        Home
+      </router-link>
+      <router-link
+        to="/#services"
+        :class="{ isActive: activeSection === 'services' }"
+        @click.prevent="setActiveSection('services')"
+      >
+        Services
+      </router-link>
+      <router-link
+        to="/#projects"
+        :class="{ isActive: activeSection === 'projects' }"
+        @click.prevent="setActiveSection('projects')"
+      >
+        Projects
+      </router-link>
     </div>
   </div>
 </template>
@@ -15,6 +33,7 @@ import { ref, onMounted, onUnmounted } from "vue";
 
 const isHidden = ref(false);
 const hasShadow = ref(false);
+const activeSection = ref("");
 let lastScrollY = 0;
 
 const handleScroll = () => {
@@ -25,15 +44,39 @@ const handleScroll = () => {
   hasShadow.value = currentScrollY > 50;
 
   lastScrollY = currentScrollY;
+
+  detectActiveSection();
+};
+
+const detectActiveSection = () => {
+  const sections = ["home", "about", "projects"];
+  let currentSection = "";
+
+  sections.forEach((section) => {
+    const element = document.getElementById(section);
+    if (element) {
+      const rect = element.getBoundingClientRect();
+      if (rect.top <= 100 && rect.bottom >= 100) {
+        currentSection = section;
+      }
+    }
+  });
+
+  activeSection.value = currentSection;
 };
 
 onMounted(() => {
   window.addEventListener("scroll", handleScroll);
+  detectActiveSection();
 });
 
 onUnmounted(() => {
   window.removeEventListener("scroll", handleScroll);
 });
+
+const setActiveSection = (section) => {
+  activeSection.value = section;
+};
 </script>
 
 <style lang="scss" scoped>
@@ -47,11 +90,10 @@ onUnmounted(() => {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: $second-color;
   transition: transform 0.4s ease-in-out, opacity 0.3s ease-in-out;
 
   img {
-    width: 9%;
+    width: 7%;
     margin-left: 4.5rem;
   }
 

@@ -1,12 +1,11 @@
 <template>
   <div>
     <Header />
-    <HomeView />
+    <HomeView id="home" />
 
     <div id="section-content">
-      <AboutView />
-      <ServicesView />
-      <ProjectsView />
+      <AboutView id="services" />
+      <ProjectsView id="projects" />
       <Footter />
     </div>
   </div>
@@ -16,7 +15,6 @@
 import Header from "@/components/Header.vue";
 import HomeView from "./views/HomeView.vue";
 import AboutView from "./views/AboutView.vue";
-import ServicesView from "./views/ServicesView.vue";
 import Footter from "./components/Footter.vue";
 import ProjectsView from "./views/ProjectsView.vue";
 </script>

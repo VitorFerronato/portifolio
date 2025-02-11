@@ -2,7 +2,7 @@
   <div id="skills">
     <h1 class="title text-center ma-0">
       My <span class="color-destaq">Skills</span>
-      <p class="ma-0 subtitle">My services</p>
+      <p class="ma-0 subtitle">What I'm good at</p>
     </h1>
 
     <div class="skills-main">
@@ -21,10 +21,15 @@
         </div>
       </div>
     </div>
+    <div class="d-flex justify-center mt-6">
+      <Button title="Resume" icon="material-symbols-light:download-rounded" />
+    </div>
   </div>
 </template>
 
 <script setup>
+import Button from "../components/Button.vue";
+
 import { ref } from "vue";
 
 const skills = ref([
@@ -145,7 +150,8 @@ const skills = ref([
 
 <style lang="scss" scoped>
 #skills {
-  padding: 4rem 0;
+  padding: 4rem 6rem 0 6rem;
+
   .skills-main {
     display: flex;
     align-items: stretch;
