@@ -14,12 +14,14 @@
           UI/UX with agile and intelligent solutions to enhance user experience.
         </p>
 
-        <router-link to="/#about"><Button title="Got curious?" /></router-link>
+        <router-link to="/#services"
+          ><Button title="Got curious?"
+        /></router-link>
       </div>
     </div>
 
     <div class="profile-picture">
-      <div class="picture"></div>
+      <div class="picture"><img src="../assets/Group 1.png" alt="" /></div>
     </div>
   </section>
 </template>
@@ -77,10 +79,6 @@ import Button from "../components/Button.vue";
     .picture {
       width: 500px;
       height: 500px;
-      background-color: $primary-color;
-      box-shadow: 0 0 10px rgba(23, 198, 148, 0.8);
-
-      clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
     }
   }
 }

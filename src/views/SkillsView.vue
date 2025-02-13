@@ -22,7 +22,9 @@
       </div>
     </div>
     <div class="d-flex justify-center mt-6">
-      <Button title="Resume" icon="material-symbols-light:download-rounded" />
+      <a href="../../public/Resume_vitor_ferronato.pdf" download
+        ><Button title="Resume" icon="material-symbols-light:download-rounded"
+      /></a>
     </div>
   </div>
 </template>

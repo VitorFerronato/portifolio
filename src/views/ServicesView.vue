@@ -31,20 +31,20 @@ const services = ref([
     icon: "material-symbols-light:computer-outline",
     title: "Web  development",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit.Praesentium soluta voluptates",
+      "I create modern, fast, and responsive websites focused on delivering the best user experience and customized solutions for blogs, PWA's. landing pages, and full web systems.",
   },
   {
     icon: "material-symbols-light:mobile-friendly-outline",
     title: "Mobile development",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit.Praesentium soluta voluptates",
+      "I build high-performance native and hybrid mobile applications. I deliver smooth and efficient solutions tailored to your project’s needs, whether it’s a simple app or a robust platform.",
   },
 
   {
     icon: "material-symbols-light:open-jam-outline-rounded",
     title: "Web Designer",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit.Praesentium soluta voluptates",
+      "I design intuitive and visually appealing interfaces, blending aesthetics with functionality. With UX/UI expertise, I create seamless experiences using tools like Figma and Adobe XD.  ",
   },
 ]);
 </script>
