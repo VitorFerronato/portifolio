@@ -14,9 +14,13 @@
           UI/UX with agile and intelligent solutions to enhance user experience.
         </p>
 
-        <router-link to="/#services"
-          ><Button title="Got curious?"
-        /></router-link>
+        <div class="d-flex">
+          <router-link to="/#services"
+            ><Button title="Got curious?"
+          /></router-link>
+        </div>
+
+        <SocialIcons class="social-icons" />
       </div>
     </div>
 
@@ -28,6 +32,7 @@
 
 <script setup>
 import Button from "../components/Button.vue";
+import SocialIcons from "@/components/SocialIcons.vue";
 </script>
 
 <style lang="scss" scoped>
@@ -67,7 +72,8 @@ import Button from "../components/Button.vue";
     }
 
     .social-icons {
-      margin-top: 4rem;
+      position: absolute;
+      bottom: 10%;
     }
   }
 

@@ -34,9 +34,9 @@ import { Navigation, Pagination, EffectCoverflow } from "swiper/modules";
 
 const images = ref([
   "../../css/img/easyBills/capa.png",
-  "https://media.istockphoto.com/id/1370291012/pt/foto/dice-thrown-over-the-green-table-playing-dice-close-up.jpg?s=2048x2048&w=is&k=20&c=zlMMJfUADASDOja3_tQDD9J1wRxpDy6eQCMD43i50mI=",
-  "https://media.istockphoto.com/id/2156740353/pt/foto/two-dice-with-six-points-up-on-green-background.jpg?s=2048x2048&w=is&k=20&c=8u4d2gVmUXVVbopVlFisTRHx-6SB_3jEZ-zW_Fbe3LM=",
-  "https://media.istockphoto.com/id/486798354/pt/foto/dados-vermelhos.jpg?s=2048x2048&w=is&k=20&c=cOAOpsqCOoaTwMbANUuYvYJ4U_eZxq1NEw5smYcgxAQ=",
+  "../../css/img/easyBills/photo_1.png",
+  "../../css/img/easyBills/photo_3.png",
+  "../../css/img/easyBills/photo_2.png",
 ]);
 </script>
 

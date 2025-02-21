@@ -1,16 +1,28 @@
 <template>
   <div class="social-icons d-flex gap-2">
-    <div class="icon-box">
-      <Icon icon="prime:linkedin" width="40" />
-    </div>
+    <a
+      href="https://www.linkedin.com/in/vitor-ferronato/"
+      target="_blank"
+      class="icon-box"
+    >
+      <Icon icon="prime:linkedin" width="40" color="#f2f2f2" />
+    </a>
 
-    <div class="icon-box">
-      <Icon icon="prime:github" width="40" />
-    </div>
+    <a
+      href="https://github.com/VitorFerronato/"
+      target="_blank"
+      class="icon-box"
+    >
+      <Icon icon="prime:github" color="#f2f2f2" width="40" />
+    </a>
 
-    <div class="icon-box">
-      <Icon icon="material-symbols-light:stacked-email-outline" width="40" />
-    </div>
+    <a href="mailto:vitorferronato@gmail.com" class="icon-box">
+      <Icon
+        icon="material-symbols-light:stacked-email-outline"
+        width="40"
+        color="#f2f2f2"
+      />
+    </a>
   </div>
 </template>
 
