@@ -1,11 +1,11 @@
 <template>
-  <div id="about-services">
+  <div id="services">
     <h1 class="title text-center ma-0">
       What i <span class="color-destaq">do?</span>
       <p class="ma-0 subtitle">My services</p>
     </h1>
 
-    <div class="services">
+    <div class="services-box">
       <div
         v-for="(service, index) in services"
         :key="index"
@@ -50,10 +50,10 @@ const services = ref([
 </script>
 
 <style lang="scss" scoped>
-#about-services {
+#services {
   margin-top: 4rem;
   padding-top: 4rem;
-  .services {
+  .services-box {
     display: flex;
     justify-content: space-evenly;
     align-items: center;

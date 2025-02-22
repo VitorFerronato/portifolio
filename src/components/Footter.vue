@@ -17,7 +17,7 @@ import SocialIcons from "../components/SocialIcons.vue";
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: $dark-color;
+  background-color: $second-color;
   height: 200px;
   color: $white-color;
 

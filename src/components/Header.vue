@@ -24,6 +24,13 @@
       >
         Projects
       </router-link>
+      <router-link
+        to="/#skills"
+        :class="{ isActive: activeSection === 'skills' }"
+        @click.prevent="setActiveSection('skills')"
+      >
+        Skills
+      </router-link>
     </div>
   </div>
 </template>
@@ -76,6 +83,12 @@ onUnmounted(() => {
 
 const setActiveSection = (section) => {
   activeSection.value = section;
+
+  const element = document.getElementById(section);
+  if (element) {
+    element.scrollIntoView({ behavior: "smooth", block: "start" });
+    isHidden.value = true;
+  }
 };
 </script>
 
@@ -83,7 +96,7 @@ const setActiveSection = (section) => {
 #header {
   position: fixed;
   top: 0;
-  height: 10rem;
+  height: 6rem;
   width: 100%;
   z-index: 10000;
 
@@ -91,9 +104,10 @@ const setActiveSection = (section) => {
   align-items: center;
   justify-content: space-between;
   transition: transform 0.4s ease-in-out, opacity 0.3s ease-in-out;
+  background-color: $second-color;
 
   img {
-    width: 7%;
+    width: 5%;
     margin-left: 4.5rem;
   }
 

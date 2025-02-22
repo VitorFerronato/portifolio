@@ -24,9 +24,9 @@
       </div>
     </div>
 
-    <div class="profile-picture">
+    <!-- <div class="profile-picture">
       <div class="picture"><img src="../assets/Group 1.png" alt="" /></div>
-    </div>
+    </div> -->
   </section>
 </template>
 

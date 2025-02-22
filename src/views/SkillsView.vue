@@ -5,7 +5,7 @@
       <p class="ma-0 subtitle">What I'm good at</p>
     </h1>
 
-    <div class="skills-main">
+    <div class="skills-box">
       <div v-for="(skill, index) in skills" :key="index" class="skills-box">
         <p>{{ skill.title }}</p>
 
@@ -154,7 +154,7 @@ const skills = ref([
 #skills {
   padding: 4rem 6rem 0 6rem;
 
-  .skills-main {
+  .skills-box {
     display: flex;
     align-items: stretch;
     flex-wrap: wrap;

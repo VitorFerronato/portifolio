@@ -49,7 +49,6 @@ const images = ref([
 .swiper-slide {
   background-position: center;
   background-size: cover;
-  width: 400px;
   height: 300px;
   display: flex;
   align-items: center;
