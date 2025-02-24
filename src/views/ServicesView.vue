@@ -1,30 +1,36 @@
 <template>
-  <div id="services">
-    <h1 class="title text-center ma-0">
-      What i <span class="color-destaq">do?</span>
-      <p class="ma-0 subtitle">My services</p>
-    </h1>
-
-    <div class="services-box">
-      <div
-        v-for="(service, index) in services"
-        :key="index"
-        class="service-card"
-      >
-        <div class="text-center">
-          <Icon :icon="service.icon" width="100" color="#00ca9d" />
-          <p class="ma-0 card-title">{{ service.title }}</p>
-          <p class="ma-0 card-subtitle">
-            {{ service.description }}
-          </p>
+  <section id="services">
+    <div>
+      <h1 class="title text-center ma-0">
+        What i <span class="color-destaq">do?</span>
+        <p class="ma-0 subtitle">My services</p>
+      </h1>
+      <div class="services-box">
+        <div
+          v-for="(service, index) in services"
+          :key="index"
+          class="service-card"
+        >
+          <div class="text-center">
+            <Icon :icon="service.icon" width="100" color="#00ca9d" />
+            <p class="ma-0 card-title">{{ service.title }}</p>
+            <p class="ma-0 card-subtitle">
+              {{ service.description }}
+            </p>
+          </div>
         </div>
       </div>
+
+      <div class="d-flex justify-center all-button">
+        <Button title="See my work!" />
+      </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script setup>
 import { ref } from "vue";
+import Button from "../components/Button.vue";
 
 const services = ref([
   {
@@ -51,8 +57,11 @@ const services = ref([
 
 <style lang="scss" scoped>
 #services {
-  margin-top: 4rem;
-  padding-top: 4rem;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   .services-box {
     display: flex;
     justify-content: space-evenly;
@@ -78,6 +87,10 @@ const services = ref([
         color: $white-light-color;
       }
     }
+  }
+
+  .all-button {
+    margin-top: 2rem;
   }
 }
 </style>

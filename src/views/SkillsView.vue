@@ -1,30 +1,32 @@
 <template>
   <div id="skills">
-    <h1 class="title text-center ma-0">
-      My <span class="color-destaq">Skills</span>
-      <p class="ma-0 subtitle">What I'm good at</p>
-    </h1>
-
-    <div class="skills-box">
-      <div v-for="(skill, index) in skills" :key="index" class="skills-box">
-        <p>{{ skill.title }}</p>
-
-        <div class="skill-icon d-flex align-center gap-2">
-          <div
-            v-for="(sk, index) in skill.skillSet"
-            :key="index"
-            class="d-flex align-center gap-2"
-          >
-            <Icon :icon="sk.icon" width="50" />
-            <span>{{ sk.name }}</span>
+    <div>
+      <h1 class="title text-center ma-0">
+        My <span class="color-destaq">Skills</span>
+        <p class="ma-0 subtitle">What I'm good at</p>
+      </h1>
+      <div class="skills-box">
+        <div v-for="(skill, index) in skills" :key="index" class="skills-box">
+          <p>{{ skill.title }}</p>
+          <div class="skill-icon d-flex align-center gap-2">
+            <div
+              v-for="(sk, index) in skill.skillSet"
+              :key="index"
+              class="d-flex align-center gap-2"
+            >
+              <Icon :icon="sk.icon" width="50" />
+              <span>{{ sk.name }}</span>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="d-flex justify-center mt-6">
-      <a href="../../public/Resume_vitor_ferronato.pdf" download
-        ><Button title="Resume" icon="material-symbols-light:download-rounded"
-      /></a>
+      <div class="d-flex justify-center mt-6">
+        <a href="../../public/Resume_vitor_ferronato.pdf" download
+          ><Button
+            title="Resume"
+            icon="material-symbols-light:download-rounded"
+        /></a>
+      </div>
     </div>
   </div>
 </template>
@@ -152,7 +154,11 @@ const skills = ref([
 
 <style lang="scss" scoped>
 #skills {
-  padding: 4rem 6rem 0 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0rem 6rem;
 
   .skills-box {
     display: flex;

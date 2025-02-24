@@ -56,7 +56,7 @@ const handleScroll = () => {
 };
 
 const detectActiveSection = () => {
-  const sections = ["home", "about", "projects"];
+  const sections = ["home", "services", "projects", "skills"];
   let currentSection = "";
 
   sections.forEach((section) => {

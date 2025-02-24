@@ -1,32 +1,46 @@
 <template>
   <section id="projects">
-    <h1 class="title text-center ma-0">
-      My <span class="color-destaq">Projects</span>
-      <p class="ma-0 subtitle">What I'm working with</p>
-    </h1>
+    <div>
+      <h1 class="title text-center ma-0">
+        My <span class="color-destaq">Projects</span>
+        <p class="ma-0 subtitle">What I'm working with</p>
+      </h1>
 
-    <Swiper />
+      <div class="swiper">
+        <div class="swiper-iten"></div>
+        <div class="swiper-iten"></div>
+        <div class="swiper-iten"></div>
+      </div>
 
-    <div class="d-flex justify-end">
-      <Button title="All projects" class="all-button" />
+      <div class="d-flex justify-center">
+        <Button title="All projects" />
+      </div>
     </div>
   </section>
 </template>
 
 <script setup>
-import Swiper from "../components/Swiper.vue";
 import Button from "../components/Button.vue";
 </script>
 
 <style lang="scss" scoped>
 #projects {
-  margin-top: 3rem;
-  padding: 4rem 6rem 0 6rem;
+  height: 100vh;
   background-color: $second-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  .all-button {
-    margin-top: 1rem;
-    margin-bottom: 4rem;
+  .swiper {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+    border: 1px solid blue;
+    .swiper-iten {
+      width: 25%;
+      height: 300px;
+      border: 1px solid red;
+    }
   }
 }
 </style>
