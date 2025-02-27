@@ -36,7 +36,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from "vue";
+import { ref, onMounted, onUnmounted, watch } from "vue";
 
 const isHidden = ref(false);
 const hasShadow = ref(false);
@@ -68,8 +68,6 @@ const detectActiveSection = () => {
       }
     }
   });
-
-  activeSection.value = currentSection;
 };
 
 onMounted(() => {
